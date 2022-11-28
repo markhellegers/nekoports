@@ -1,0 +1,151 @@
+f 0755 root sys /usr/nekoware/bin/bash /usr/nekoware/bin/bash neko_bash.sw.eoe
+f 0555 root sys /usr/nekoware/bin/bashbug /usr/nekoware/bin/bashbug neko_bash.sw.eoe
+f 0644 root sys /usr/nekoware/dist/neko_bash.idb /usr/nekoware/dist/neko_bash.idb neko_bash.opt.dist norqs
+f 0644 root sys /usr/nekoware/dist/neko_bash.spec /usr/nekoware/dist/neko_bash.spec neko_bash.opt.dist norqs
+f 0644 root sys /usr/nekoware/include/bash/alias.h /usr/nekoware/include/bash/alias.h neko_bash.sw.headers norqs
+f 0644 root sys /usr/nekoware/include/bash/array.h /usr/nekoware/include/bash/array.h neko_bash.sw.headers norqs
+f 0644 root sys /usr/nekoware/include/bash/arrayfunc.h /usr/nekoware/include/bash/arrayfunc.h neko_bash.sw.headers norqs
+f 0644 root sys /usr/nekoware/include/bash/assoc.h /usr/nekoware/include/bash/assoc.h neko_bash.sw.headers norqs
+f 0644 root sys /usr/nekoware/include/bash/bashansi.h /usr/nekoware/include/bash/bashansi.h neko_bash.sw.headers norqs
+f 0644 root sys /usr/nekoware/include/bash/bashintl.h /usr/nekoware/include/bash/bashintl.h neko_bash.sw.headers norqs
+f 0644 root sys /usr/nekoware/include/bash/bashjmp.h /usr/nekoware/include/bash/bashjmp.h neko_bash.sw.headers norqs
+f 0644 root sys /usr/nekoware/include/bash/bashtypes.h /usr/nekoware/include/bash/bashtypes.h neko_bash.sw.headers norqs
+d 0755 root sys /usr/nekoware/include/bash/builtins /usr/nekoware/include/bash/builtins neko_bash.sw.headers norqs
+f 0644 root sys /usr/nekoware/include/bash/builtins.h /usr/nekoware/include/bash/builtins.h neko_bash.sw.headers norqs
+f 0644 root sys /usr/nekoware/include/bash/builtins/bashgetopt.h /usr/nekoware/include/bash/builtins/bashgetopt.h neko_bash.sw.headers norqs
+f 0644 root sys /usr/nekoware/include/bash/builtins/builtext.h /usr/nekoware/include/bash/builtins/builtext.h neko_bash.sw.headers norqs
+f 0644 root sys /usr/nekoware/include/bash/builtins/common.h /usr/nekoware/include/bash/builtins/common.h neko_bash.sw.headers norqs
+f 0644 root sys /usr/nekoware/include/bash/builtins/getopt.h /usr/nekoware/include/bash/builtins/getopt.h neko_bash.sw.headers norqs
+f 0644 root sys /usr/nekoware/include/bash/command.h /usr/nekoware/include/bash/command.h neko_bash.sw.headers norqs
+f 0644 root sys /usr/nekoware/include/bash/config-bot.h /usr/nekoware/include/bash/config-bot.h neko_bash.sw.headers norqs
+f 0644 root sys /usr/nekoware/include/bash/config-top.h /usr/nekoware/include/bash/config-top.h neko_bash.sw.headers norqs
+f 0644 root sys /usr/nekoware/include/bash/config.h /usr/nekoware/include/bash/config.h neko_bash.sw.headers norqs
+f 0644 root sys /usr/nekoware/include/bash/conftypes.h /usr/nekoware/include/bash/conftypes.h neko_bash.sw.headers norqs
+f 0644 root sys /usr/nekoware/include/bash/dispose_cmd.h /usr/nekoware/include/bash/dispose_cmd.h neko_bash.sw.headers norqs
+f 0644 root sys /usr/nekoware/include/bash/error.h /usr/nekoware/include/bash/error.h neko_bash.sw.headers norqs
+f 0644 root sys /usr/nekoware/include/bash/externs.h /usr/nekoware/include/bash/externs.h neko_bash.sw.headers norqs
+f 0644 root sys /usr/nekoware/include/bash/general.h /usr/nekoware/include/bash/general.h neko_bash.sw.headers norqs
+f 0644 root sys /usr/nekoware/include/bash/hashlib.h /usr/nekoware/include/bash/hashlib.h neko_bash.sw.headers norqs
+d 0755 root sys /usr/nekoware/include/bash/include /usr/nekoware/include/bash/include neko_bash.sw.headers norqs
+f 0644 root sys /usr/nekoware/include/bash/include/ansi_stdlib.h /usr/nekoware/include/bash/include/ansi_stdlib.h neko_bash.sw.headers norqs
+f 0644 root sys /usr/nekoware/include/bash/include/chartypes.h /usr/nekoware/include/bash/include/chartypes.h neko_bash.sw.headers norqs
+f 0644 root sys /usr/nekoware/include/bash/include/filecntl.h /usr/nekoware/include/bash/include/filecntl.h neko_bash.sw.headers norqs
+f 0644 root sys /usr/nekoware/include/bash/include/gettext.h /usr/nekoware/include/bash/include/gettext.h neko_bash.sw.headers norqs
+f 0644 root sys /usr/nekoware/include/bash/include/maxpath.h /usr/nekoware/include/bash/include/maxpath.h neko_bash.sw.headers norqs
+f 0644 root sys /usr/nekoware/include/bash/include/memalloc.h /usr/nekoware/include/bash/include/memalloc.h neko_bash.sw.headers norqs
+f 0644 root sys /usr/nekoware/include/bash/include/ocache.h /usr/nekoware/include/bash/include/ocache.h neko_bash.sw.headers norqs
+f 0644 root sys /usr/nekoware/include/bash/include/posixdir.h /usr/nekoware/include/bash/include/posixdir.h neko_bash.sw.headers norqs
+f 0644 root sys /usr/nekoware/include/bash/include/posixjmp.h /usr/nekoware/include/bash/include/posixjmp.h neko_bash.sw.headers norqs
+f 0644 root sys /usr/nekoware/include/bash/include/posixstat.h /usr/nekoware/include/bash/include/posixstat.h neko_bash.sw.headers norqs
+f 0644 root sys /usr/nekoware/include/bash/include/posixtime.h /usr/nekoware/include/bash/include/posixtime.h neko_bash.sw.headers norqs
+f 0644 root sys /usr/nekoware/include/bash/include/posixwait.h /usr/nekoware/include/bash/include/posixwait.h neko_bash.sw.headers norqs
+f 0644 root sys /usr/nekoware/include/bash/include/shmbchar.h /usr/nekoware/include/bash/include/shmbchar.h neko_bash.sw.headers norqs
+f 0644 root sys /usr/nekoware/include/bash/include/shmbutil.h /usr/nekoware/include/bash/include/shmbutil.h neko_bash.sw.headers norqs
+f 0644 root sys /usr/nekoware/include/bash/include/shtty.h /usr/nekoware/include/bash/include/shtty.h neko_bash.sw.headers norqs
+f 0644 root sys /usr/nekoware/include/bash/include/stat-time.h /usr/nekoware/include/bash/include/stat-time.h neko_bash.sw.headers norqs
+f 0644 root sys /usr/nekoware/include/bash/include/stdc.h /usr/nekoware/include/bash/include/stdc.h neko_bash.sw.headers norqs
+f 0644 root sys /usr/nekoware/include/bash/include/systimes.h /usr/nekoware/include/bash/include/systimes.h neko_bash.sw.headers norqs
+f 0644 root sys /usr/nekoware/include/bash/include/typemax.h /usr/nekoware/include/bash/include/typemax.h neko_bash.sw.headers norqs
+f 0644 root sys /usr/nekoware/include/bash/include/unionwait.h /usr/nekoware/include/bash/include/unionwait.h neko_bash.sw.headers norqs
+f 0644 root sys /usr/nekoware/include/bash/jobs.h /usr/nekoware/include/bash/jobs.h neko_bash.sw.headers norqs
+f 0644 root sys /usr/nekoware/include/bash/make_cmd.h /usr/nekoware/include/bash/make_cmd.h neko_bash.sw.headers norqs
+f 0644 root sys /usr/nekoware/include/bash/pathnames.h /usr/nekoware/include/bash/pathnames.h neko_bash.sw.headers norqs
+f 0644 root sys /usr/nekoware/include/bash/quit.h /usr/nekoware/include/bash/quit.h neko_bash.sw.headers norqs
+f 0644 root sys /usr/nekoware/include/bash/shell.h /usr/nekoware/include/bash/shell.h neko_bash.sw.headers norqs
+f 0644 root sys /usr/nekoware/include/bash/sig.h /usr/nekoware/include/bash/sig.h neko_bash.sw.headers norqs
+f 0644 root sys /usr/nekoware/include/bash/siglist.h /usr/nekoware/include/bash/siglist.h neko_bash.sw.headers norqs
+f 0644 root sys /usr/nekoware/include/bash/signames.h /usr/nekoware/include/bash/signames.h neko_bash.sw.headers norqs
+f 0644 root sys /usr/nekoware/include/bash/subst.h /usr/nekoware/include/bash/subst.h neko_bash.sw.headers norqs
+f 0644 root sys /usr/nekoware/include/bash/syntax.h /usr/nekoware/include/bash/syntax.h neko_bash.sw.headers norqs
+f 0644 root sys /usr/nekoware/include/bash/unwind_prot.h /usr/nekoware/include/bash/unwind_prot.h neko_bash.sw.headers norqs
+f 0644 root sys /usr/nekoware/include/bash/variables.h /usr/nekoware/include/bash/variables.h neko_bash.sw.headers norqs
+f 0644 root sys /usr/nekoware/include/bash/version.h /usr/nekoware/include/bash/version.h neko_bash.sw.headers norqs
+f 0644 root sys /usr/nekoware/include/bash/xmalloc.h /usr/nekoware/include/bash/xmalloc.h neko_bash.sw.headers norqs
+f 0644 root sys /usr/nekoware/include/bash/y.tab.h /usr/nekoware/include/bash/y.tab.h neko_bash.sw.headers norqs
+d 0755 root sys /usr/nekoware/lib/bash /usr/nekoware/lib/bash neko_bash.sw.lib norqs
+f 0644 root sys /usr/nekoware/lib/bash/Makefile.inc /usr/nekoware/lib/bash/Makefile.inc neko_bash.sw.lib norqs
+f 0755 root sys /usr/nekoware/lib/bash/accept /usr/nekoware/lib/bash/accept neko_bash.sw.lib
+f 0755 root sys /usr/nekoware/lib/bash/basename /usr/nekoware/lib/bash/basename neko_bash.sw.lib
+f 0755 root sys /usr/nekoware/lib/bash/csv /usr/nekoware/lib/bash/csv neko_bash.sw.lib
+f 0755 root sys /usr/nekoware/lib/bash/cut /usr/nekoware/lib/bash/cut neko_bash.sw.lib
+f 0755 root sys /usr/nekoware/lib/bash/dirname /usr/nekoware/lib/bash/dirname neko_bash.sw.lib
+f 0755 root sys /usr/nekoware/lib/bash/fdflags /usr/nekoware/lib/bash/fdflags neko_bash.sw.lib
+f 0755 root sys /usr/nekoware/lib/bash/finfo /usr/nekoware/lib/bash/finfo neko_bash.sw.lib
+f 0755 root sys /usr/nekoware/lib/bash/head /usr/nekoware/lib/bash/head neko_bash.sw.lib
+f 0755 root sys /usr/nekoware/lib/bash/id /usr/nekoware/lib/bash/id neko_bash.sw.lib
+f 0755 root sys /usr/nekoware/lib/bash/ln /usr/nekoware/lib/bash/ln neko_bash.sw.lib
+f 0644 root sys /usr/nekoware/lib/bash/loadables.h /usr/nekoware/lib/bash/loadables.h neko_bash.sw.lib norqs
+f 0755 root sys /usr/nekoware/lib/bash/logname /usr/nekoware/lib/bash/logname neko_bash.sw.lib
+f 0755 root sys /usr/nekoware/lib/bash/mkdir /usr/nekoware/lib/bash/mkdir neko_bash.sw.lib
+f 0755 root sys /usr/nekoware/lib/bash/mkfifo /usr/nekoware/lib/bash/mkfifo neko_bash.sw.lib
+f 0755 root sys /usr/nekoware/lib/bash/mktemp /usr/nekoware/lib/bash/mktemp neko_bash.sw.lib
+f 0755 root sys /usr/nekoware/lib/bash/mypid /usr/nekoware/lib/bash/mypid neko_bash.sw.lib
+f 0755 root sys /usr/nekoware/lib/bash/pathchk /usr/nekoware/lib/bash/pathchk neko_bash.sw.lib
+f 0755 root sys /usr/nekoware/lib/bash/print /usr/nekoware/lib/bash/print neko_bash.sw.lib
+f 0755 root sys /usr/nekoware/lib/bash/printenv /usr/nekoware/lib/bash/printenv neko_bash.sw.lib
+f 0755 root sys /usr/nekoware/lib/bash/push /usr/nekoware/lib/bash/push neko_bash.sw.lib
+f 0755 root sys /usr/nekoware/lib/bash/realpath /usr/nekoware/lib/bash/realpath neko_bash.sw.lib
+f 0755 root sys /usr/nekoware/lib/bash/rm /usr/nekoware/lib/bash/rm neko_bash.sw.lib
+f 0755 root sys /usr/nekoware/lib/bash/rmdir /usr/nekoware/lib/bash/rmdir neko_bash.sw.lib
+f 0755 root sys /usr/nekoware/lib/bash/seq /usr/nekoware/lib/bash/seq neko_bash.sw.lib
+f 0755 root sys /usr/nekoware/lib/bash/setpgid /usr/nekoware/lib/bash/setpgid neko_bash.sw.lib
+f 0755 root sys /usr/nekoware/lib/bash/sleep /usr/nekoware/lib/bash/sleep neko_bash.sw.lib
+f 0755 root sys /usr/nekoware/lib/bash/strftime /usr/nekoware/lib/bash/strftime neko_bash.sw.lib
+f 0755 root sys /usr/nekoware/lib/bash/sync /usr/nekoware/lib/bash/sync neko_bash.sw.lib
+f 0755 root sys /usr/nekoware/lib/bash/tee /usr/nekoware/lib/bash/tee neko_bash.sw.lib
+f 0755 root sys /usr/nekoware/lib/bash/truefalse /usr/nekoware/lib/bash/truefalse neko_bash.sw.lib
+f 0755 root sys /usr/nekoware/lib/bash/tty /usr/nekoware/lib/bash/tty neko_bash.sw.lib
+f 0755 root sys /usr/nekoware/lib/bash/uname /usr/nekoware/lib/bash/uname neko_bash.sw.lib
+f 0755 root sys /usr/nekoware/lib/bash/unlink /usr/nekoware/lib/bash/unlink neko_bash.sw.lib
+f 0755 root sys /usr/nekoware/lib/bash/whoami /usr/nekoware/lib/bash/whoami neko_bash.sw.lib
+d 0755 root sys /usr/nekoware/lib/pkgconfig /usr/nekoware/lib/pkgconfig neko_bash.sw.lib norqs
+f 0644 root sys /usr/nekoware/lib/pkgconfig/bash.pc /usr/nekoware/lib/pkgconfig/bash.pc neko_bash.sw.lib norqs
+f 0644 root sys /usr/nekoware/patches/bash-5.1.16.patch /usr/nekoware/patches/bash-5.1.16.patch neko_bash.opt.patches norqs
+f 0644 root sys /usr/nekoware/relnotes/neko_bash.txt /usr/nekoware/relnotes/neko_bash.txt neko_bash.opt.relnotes norqs
+f 0644 root sys /usr/nekoware/share/doc/bash/CHANGES /usr/nekoware/share/doc/bash/CHANGES neko_bash.man.manpages norqs
+f 0644 root sys /usr/nekoware/share/doc/bash/FAQ /usr/nekoware/share/doc/bash/FAQ neko_bash.man.manpages norqs
+f 0644 root sys /usr/nekoware/share/doc/bash/bash.html /usr/nekoware/share/doc/bash/bash.html neko_bash.man.manpages norqs
+f 0644 root sys /usr/nekoware/share/doc/bash/bashref.html /usr/nekoware/share/doc/bash/bashref.html neko_bash.man.manpages norqs
+f 0644 root sys /usr/nekoware/share/info/bash.info /usr/nekoware/share/info/bash.info neko_bash.man.manpages norqs
+f 0644 root sys /usr/nekoware/share/locale/af/LC_MESSAGES/bash.mo /usr/nekoware/share/locale/af/LC_MESSAGES/bash.mo neko_bash.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/locale/bg/LC_MESSAGES/bash.mo /usr/nekoware/share/locale/bg/LC_MESSAGES/bash.mo neko_bash.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/locale/ca/LC_MESSAGES/bash.mo /usr/nekoware/share/locale/ca/LC_MESSAGES/bash.mo neko_bash.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/locale/cs/LC_MESSAGES/bash.mo /usr/nekoware/share/locale/cs/LC_MESSAGES/bash.mo neko_bash.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/locale/da/LC_MESSAGES/bash.mo /usr/nekoware/share/locale/da/LC_MESSAGES/bash.mo neko_bash.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/locale/de/LC_MESSAGES/bash.mo /usr/nekoware/share/locale/de/LC_MESSAGES/bash.mo neko_bash.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/locale/el/LC_MESSAGES/bash.mo /usr/nekoware/share/locale/el/LC_MESSAGES/bash.mo neko_bash.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/locale/en@boldquot/LC_MESSAGES/bash.mo /usr/nekoware/share/locale/en@boldquot/LC_MESSAGES/bash.mo neko_bash.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/locale/en@quot/LC_MESSAGES/bash.mo /usr/nekoware/share/locale/en@quot/LC_MESSAGES/bash.mo neko_bash.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/locale/eo/LC_MESSAGES/bash.mo /usr/nekoware/share/locale/eo/LC_MESSAGES/bash.mo neko_bash.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/locale/es/LC_MESSAGES/bash.mo /usr/nekoware/share/locale/es/LC_MESSAGES/bash.mo neko_bash.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/locale/et/LC_MESSAGES/bash.mo /usr/nekoware/share/locale/et/LC_MESSAGES/bash.mo neko_bash.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/locale/fi/LC_MESSAGES/bash.mo /usr/nekoware/share/locale/fi/LC_MESSAGES/bash.mo neko_bash.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/locale/fr/LC_MESSAGES/bash.mo /usr/nekoware/share/locale/fr/LC_MESSAGES/bash.mo neko_bash.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/locale/ga/LC_MESSAGES/bash.mo /usr/nekoware/share/locale/ga/LC_MESSAGES/bash.mo neko_bash.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/locale/gl/LC_MESSAGES/bash.mo /usr/nekoware/share/locale/gl/LC_MESSAGES/bash.mo neko_bash.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/locale/hr/LC_MESSAGES/bash.mo /usr/nekoware/share/locale/hr/LC_MESSAGES/bash.mo neko_bash.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/locale/hu/LC_MESSAGES/bash.mo /usr/nekoware/share/locale/hu/LC_MESSAGES/bash.mo neko_bash.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/locale/id/LC_MESSAGES/bash.mo /usr/nekoware/share/locale/id/LC_MESSAGES/bash.mo neko_bash.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/locale/it/LC_MESSAGES/bash.mo /usr/nekoware/share/locale/it/LC_MESSAGES/bash.mo neko_bash.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/locale/ja/LC_MESSAGES/bash.mo /usr/nekoware/share/locale/ja/LC_MESSAGES/bash.mo neko_bash.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/locale/ko/LC_MESSAGES/bash.mo /usr/nekoware/share/locale/ko/LC_MESSAGES/bash.mo neko_bash.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/locale/lt/LC_MESSAGES/bash.mo /usr/nekoware/share/locale/lt/LC_MESSAGES/bash.mo neko_bash.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/locale/nb/LC_MESSAGES/bash.mo /usr/nekoware/share/locale/nb/LC_MESSAGES/bash.mo neko_bash.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/locale/nl/LC_MESSAGES/bash.mo /usr/nekoware/share/locale/nl/LC_MESSAGES/bash.mo neko_bash.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/locale/pl/LC_MESSAGES/bash.mo /usr/nekoware/share/locale/pl/LC_MESSAGES/bash.mo neko_bash.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/locale/pt/LC_MESSAGES/bash.mo /usr/nekoware/share/locale/pt/LC_MESSAGES/bash.mo neko_bash.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/locale/pt_BR/LC_MESSAGES/bash.mo /usr/nekoware/share/locale/pt_BR/LC_MESSAGES/bash.mo neko_bash.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/locale/ro/LC_MESSAGES/bash.mo /usr/nekoware/share/locale/ro/LC_MESSAGES/bash.mo neko_bash.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/locale/ru/LC_MESSAGES/bash.mo /usr/nekoware/share/locale/ru/LC_MESSAGES/bash.mo neko_bash.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/locale/sk/LC_MESSAGES/bash.mo /usr/nekoware/share/locale/sk/LC_MESSAGES/bash.mo neko_bash.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/locale/sl/LC_MESSAGES/bash.mo /usr/nekoware/share/locale/sl/LC_MESSAGES/bash.mo neko_bash.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/locale/sr/LC_MESSAGES/bash.mo /usr/nekoware/share/locale/sr/LC_MESSAGES/bash.mo neko_bash.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/locale/sv/LC_MESSAGES/bash.mo /usr/nekoware/share/locale/sv/LC_MESSAGES/bash.mo neko_bash.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/locale/tr/LC_MESSAGES/bash.mo /usr/nekoware/share/locale/tr/LC_MESSAGES/bash.mo neko_bash.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/locale/uk/LC_MESSAGES/bash.mo /usr/nekoware/share/locale/uk/LC_MESSAGES/bash.mo neko_bash.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/locale/vi/LC_MESSAGES/bash.mo /usr/nekoware/share/locale/vi/LC_MESSAGES/bash.mo neko_bash.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/locale/zh_CN/LC_MESSAGES/bash.mo /usr/nekoware/share/locale/zh_CN/LC_MESSAGES/bash.mo neko_bash.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/locale/zh_TW/LC_MESSAGES/bash.mo /usr/nekoware/share/locale/zh_TW/LC_MESSAGES/bash.mo neko_bash.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/man/man1/bash.1 /usr/nekoware/share/man/man1/bash.1 neko_bash.man.manpages norqs
+f 0644 root sys /usr/nekoware/share/man/man1/bashbug.1 /usr/nekoware/share/man/man1/bashbug.1 neko_bash.man.manpages norqs
+f 0644 root sys /usr/nekoware/src/bash-5.1.16.tar.gz /usr/nekoware/src/bash-5.1.16.tar.gz neko_bash.opt.src norqs

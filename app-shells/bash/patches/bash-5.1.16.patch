@@ -1,0 +1,127 @@
+From 59df36fc9b775cf204e62569eca63ba2a1589ac3 Mon Sep 17 00:00:00 2001
+From: Mark Hellegers <mark@firedisk.net>
+Date: Thu, 20 Oct 2022 00:36:55 +0200
+Subject: [PATCH] Fixes to make it work on Irix
+
+---
+ config-top.h                |  2 +-
+ examples/loadables/cut.c    |  2 ++
+ examples/loadables/strsep.h | 57 +++++++++++++++++++++++++++++++++++++
+ lib/sh/input_avail.c        |  4 +--
+ 4 files changed, 62 insertions(+), 3 deletions(-)
+ create mode 100644 examples/loadables/strsep.h
+
+diff --git a/config-top.h b/config-top.h
+index 735f75e..52a675d 100644
+--- a/config-top.h
++++ b/config-top.h
+@@ -175,7 +175,7 @@
+ /* Define to use libc mktemp/mkstemp instead of replacements in lib/sh/tmpfile.c */
+ #define USE_MKTEMP
+ #define USE_MKSTEMP
+-#define USE_MKDTEMP
++/*#define USE_MKDTEMP*/
+ 
+ /* Define to force the value of OLDPWD inherited from the environment to be a
+    directory */
+diff --git a/examples/loadables/cut.c b/examples/loadables/cut.c
+index ad9a833..011bf26 100644
+--- a/examples/loadables/cut.c
++++ b/examples/loadables/cut.c
+@@ -33,6 +33,8 @@
+ #include "loadables.h"
+ #include "shmbutil.h"
+ 
++#include "strsep.h"
++
+ #define CUT_ARRAY_DEFAULT	"CUTFIELDS"
+ 
+ #define NOPOS	-2		/* sentinel for unset startpos/endpos */
+diff --git a/examples/loadables/strsep.h b/examples/loadables/strsep.h
+new file mode 100644
+index 0000000..c05d7eb
+--- /dev/null
++++ b/examples/loadables/strsep.h
+@@ -0,0 +1,57 @@
++/* Copyright (C) 2004, 2007, 2009-2022 Free Software Foundation, Inc.
++
++   Written by Yoann Vandoorselaere <yoann@prelude-ids.org>.
++
++   This file is free software: you can redistribute it and/or modify
++   it under the terms of the GNU Lesser General Public License as
++   published by the Free Software Foundation; either version 2.1 of the
++   License, or (at your option) any later version.
++
++   This file is distributed in the hope that it will be useful,
++   but WITHOUT ANY WARRANTY; without even the implied warranty of
++   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
++   GNU Lesser General Public License for more details.
++
++   You should have received a copy of the GNU Lesser General Public License
++   along with this program.  If not, see <https://www.gnu.org/licenses/>.  */
++
++#ifdef HAVE_CONFIG_H
++# include <config.h>
++#endif
++
++/* Specification.  */
++#include <string.h>
++
++char *
++strsep (char **stringp, const char *delim)
++{
++  char *start = *stringp;
++  char *ptr;
++
++  if (start == NULL)
++    return NULL;
++
++  /* Optimize the case of no delimiters.  */
++  if (delim[0] == '\0')
++    {
++      *stringp = NULL;
++      return start;
++    }
++
++  /* Optimize the case of one delimiter.  */
++  if (delim[1] == '\0')
++    ptr = strchr (start, delim[0]);
++  else
++    /* The general case.  */
++    ptr = strpbrk (start, delim);
++  if (ptr == NULL)
++    {
++      *stringp = NULL;
++      return start;
++    }
++
++  *ptr = '\0';
++  *stringp = ptr + 1;
++
++  return start;
++}
+diff --git a/lib/sh/input_avail.c b/lib/sh/input_avail.c
+index 695165f..d19ab9e 100644
+--- a/lib/sh/input_avail.c
++++ b/lib/sh/input_avail.c
+@@ -33,7 +33,7 @@
+ #  include <sys/file.h>
+ #endif /* HAVE_SYS_FILE_H */
+ 
+-#if defined (HAVE_PSELECT)
++#if defined (HAVE_PSELECT) || defined (HAVE_SELECT)
+ #  include <signal.h>
+ #endif
+ 
+@@ -110,7 +110,7 @@ nchars_avail (fd, nchars)
+ #if defined(HAVE_SELECT)
+   fd_set readfds, exceptfds;
+ #endif
+-#if defined (HAVE_PSELECT)
++#if defined (HAVE_PSELECT) || defined (HAVE_SELECT)
+   sigset_t set, oset;
+ #endif
+ 
+-- 
+2.36.0
+

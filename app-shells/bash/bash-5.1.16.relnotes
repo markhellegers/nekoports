@@ -1,0 +1,60 @@
+PACKAGE NAME
+------------
+neko_bash
+
+
+DESCRIPTION
+-----------
+Bash is an sh-compatible command language interpreter that
+executes commands read from the standard input or from a file. Bash also
+incorporates useful features from the Korn and C shells (ksh and csh).
+
+
+SOURCE/VERSION
+--------------
+bash-5.1.16 / 1
+
+
+IRIX/MIPSPRO VERSION
+--------------------
+6.5.22 / 7.4.4m
+
+
+ENVIRONMENT VARIABLES
+---------------------
+setenv CC c99
+setenv CPP 'c99 -E'
+setenv MAKE /usr/nekoware/bin/gmake
+setenv CFLAGS '-O3 -I/usr/nekoware/include'
+setenv LDFLAGS '-L/usr/nekoware/lib'
+setenv PATH /usr/nekoware/bin:/usr/nekoware/sbin:$PATH
+
+CONFIGURE
+---------
+./configure --prefix=/usr/nekoware
+
+
+BUILD
+-----
+gmake
+gmake install
+
+
+KNOWN DEPENDENCIES
+------------------
+neko_gettext.sw.lib 10 maxint
+neko_libiconv.sw.lib 5 maxint
+
+gmake to build the package
+
+
+ERRORS/MISCELLANEOUS
+--------------------
+None
+
+PACKAGED BY
+-----------
+
+S/N     VER      PORTER                                Date
+---------------------------------------------------------------
+1       5.1.16   Mark Hellegers (mark@firedisk.net)
