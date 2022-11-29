@@ -101,7 +101,7 @@ f 0755 root sys /usr/nekoware/lib/bash/whoami /usr/nekoware/lib/bash/whoami neko
 d 0755 root sys /usr/nekoware/lib/pkgconfig /usr/nekoware/lib/pkgconfig neko_bash.sw.lib norqs
 f 0644 root sys /usr/nekoware/lib/pkgconfig/bash.pc /usr/nekoware/lib/pkgconfig/bash.pc neko_bash.sw.lib norqs
 f 0644 root sys /usr/nekoware/patches/bash-5.1.16.patch /usr/nekoware/patches/bash-5.1.16.patch neko_bash.opt.patches norqs
-f 0644 root sys /usr/nekoware/relnotes/neko_bash.txt /usr/nekoware/relnotes/neko_bash.txt neko_bash.opt.relnotes norqs
+f 0644 root sys /usr/nekoware/relnotes/bash-5.1.16.relnotes /usr/nekoware/relnotes/bash-5.1.16.relnotes neko_bash.opt.relnotes norqs
 f 0644 root sys /usr/nekoware/share/doc/bash/CHANGES /usr/nekoware/share/doc/bash/CHANGES neko_bash.man.manpages norqs
 f 0644 root sys /usr/nekoware/share/doc/bash/FAQ /usr/nekoware/share/doc/bash/FAQ neko_bash.man.manpages norqs
 f 0644 root sys /usr/nekoware/share/doc/bash/bash.html /usr/nekoware/share/doc/bash/bash.html neko_bash.man.manpages norqs
