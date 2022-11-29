@@ -16,6 +16,7 @@ sub build_port {
 
 	my $nekoports_build_dir = "/var/tmp/nekoports/build/$port_path";
 	my $nekoports_install_dir = "/var/tmp/nekoports/install/$port_path";
+	my $nekoports_dist_dir = "/var/tmp/nekoports/dist/$port_path";
 	my $nekoports_recipe_path = "$nekoports_dir/$port_path/$port_recipe";
 	my $source_uri;
 	my $system_result;
@@ -55,11 +56,13 @@ sub build_port {
 	print "Clearing existing data\n";
 	rmtree($nekoports_build_dir);
 	rmtree($nekoports_install_dir);
+	rmtree($nekoports_dist_dir);
 
 	print "Creating directories\n";
 
 	mkpath($nekoports_build_dir);
 	mkpath($nekoports_install_dir);
+	mkpath($nekoports_dist_dir);
 
 	chdir $nekoports_build_dir;
 
@@ -126,18 +129,41 @@ sub build_port {
 	}
 
 	print "Creating distribution directories\n";
-	$nekoports_install_dir = "$nekoports_install_dir/usr/nekoware";
-	mkpath("$nekoports_install_dir/patches");
-	mkpath("$nekoports_install_dir/src");
-	mkpath("$nekoports_install_dir/relnotes");
-	mkpath("$nekoports_install_dir/dist");
+	my $nekoports_install_nekoware_dir = "$nekoports_install_dir/usr/nekoware";
+	mkpath("$nekoports_install_nekoware_dir/patches");
+	mkpath("$nekoports_install_nekoware_dir/src");
+	mkpath("$nekoports_install_nekoware_dir/relnotes");
+	mkpath("$nekoports_install_nekoware_dir/dist");
 
 	print "Copying files to distribution directory\n";
+	my $nekoports_port_and_version = $port_recipe;
+	$nekoports_port_and_version =~ s/.recipe//;
+	my @nekoports_port_fields = split(/-/, $nekoports_port_and_version);
+	my $nekoports_port = @nekoports_port_fields[0];
+
+	my $nekoports_source_file_path = "$nekoports_build_dir/$source_filename";
 	my $nekoports_relnotes_path = $nekoports_recipe_path;
 	$nekoports_relnotes_path =~ s/recipe/relnotes/g;
-	copy($patch_file, "$nekoports_install_dir/patches") or die "Failed to copy patch $patch_file to $nekoports_install_dir/patches";
-	copy($source_filename, "$nekoports_install_dir/src") or die "Failed to copy source $source_filename to $nekoports_install_dir/src";
-	copy($nekoports_relnotes_path, "$nekoports_install_dir/relnotes") or die "Failed to copy source $nekoports_relnotes_path to $nekoports_install_dir/relnotes";
+	my $nekoports_idb_path = "$nekoports_dir/$port_path/dist/neko_$nekoports_port.idb";
+	my $nekoports_spec_path = "$nekoports_dir/$port_path/dist/neko_$nekoports_port.spec";
+	copy($patch_file, "$nekoports_install_nekoware_dir/patches") or die "Failed to copy patch $patch_file to $nekoports_install_nekoware_dir/patches";
+	copy($nekoports_source_file_path, "$nekoports_install_nekoware_dir/src") or die "Failed to copy source $source_filename to $nekoports_install_nekoware_dir/src";
+	copy($nekoports_relnotes_path, "$nekoports_install_nekoware_dir/relnotes") or die "Failed to copy release notes $nekoports_relnotes_path to $nekoports_install_nekoware_dir/relnotes";
+	copy($nekoports_idb_path, "$nekoports_install_nekoware_dir/dist") or die "Failed to copy idb file $nekoports_idb_path to $nekoports_install_nekoware_dir/dist";
+	copy($nekoports_spec_path, "$nekoports_install_nekoware_dir/dist") or die "Failed to copy spec file $nekoports_spec_path to $nekoports_install_nekoware_dir/dist";
+
+	print "Generating distribution\n";
+	$system_result = system("gendist -sbase $nekoports_install_dir -idb $nekoports_dir/$port_path/dist/neko_$nekoports_port.idb -spec $nekoports_dir/$port_path/dist/neko_$nekoports_port.spec -dist $nekoports_dist_dir");
+	if ($system_result) {
+		die "Failed to generate distribution";
+	}
+
+	print "Creating package\n";
+	chdir $nekoports_dist_dir;
+	$system_result = system("tar -cvf neko_$nekoports_port_and_version.tardist *");
+	if ($system_result) {
+		die "Failed to createo package file neko_$nekoports_port_and_version.tardist";
+	}
 
 	print "Done!\n";
 }
