@@ -1,0 +1,10 @@
+f 0755 root sys /usr/nekoware/bin/less /usr/nekoware/bin/less neko_less.sw.eoe
+f 0555 root sys /usr/nekoware/bin/lessecho /usr/nekoware/bin/lessecho neko_less.sw.eoe
+f 0555 root sys /usr/nekoware/bin/lesskey /usr/nekoware/bin/lesskey neko_less.sw.eoe
+f 0644 root sys /usr/nekoware/dist/neko_less.idb /usr/nekoware/dist/neko_less.idb neko_less.opt.dist norqs
+f 0644 root sys /usr/nekoware/dist/neko_less.spec /usr/nekoware/dist/neko_less.spec neko_less.opt.dist norqs
+f 0644 root sys /usr/nekoware/relnotes/less-608.relnotes /usr/nekoware/relnotes/less-608.relnotes neko_less.opt.relnotes norqs
+f 0644 root sys /usr/nekoware/share/man/man1/less.1 /usr/nekoware/share/man/man1/less.1 neko_less.man.manpages norqs
+f 0644 root sys /usr/nekoware/share/man/man1/lessecho.1 /usr/nekoware/share/man/man1/lessecho.1 neko_less.man.manpages norqs
+f 0644 root sys /usr/nekoware/share/man/man1/lesskey.1 /usr/nekoware/share/man/man1/lesskey.1 neko_less.man.manpages norqs
+f 0644 root sys /usr/nekoware/src/less-608.tar.gz /usr/nekoware/src/less-608.tar.gz neko_less.opt.src norqs

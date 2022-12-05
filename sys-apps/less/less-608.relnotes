@@ -1,0 +1,51 @@
+PACKAGE NAME
+------------
+neko_less
+
+
+DESCRIPTION
+-----------
+Less is a free, open-source file pager
+
+SOURCE/VERSION
+--------------
+bash-608 / 1
+
+
+IRIX/MIPSPRO VERSION
+--------------------
+6.5.22 / 7.4.4m
+
+
+ENVIRONMENT VARIABLES
+---------------------
+setenv CC c99
+setenv MAKE /usr/nekoware/bin/gmake
+setenv PATH /usr/nekoware/bin:/usr/nekoware/sbin:$PATH
+
+CONFIGURE
+---------
+./configure --prefix=/usr/nekoware
+
+
+BUILD
+-----
+gmake
+gmake install
+
+
+KNOWN DEPENDENCIES
+------------------
+gmake to build the package
+
+
+ERRORS/MISCELLANEOUS
+--------------------
+None
+
+PACKAGED BY
+-----------
+
+S/N     VER      PORTER                                Date
+---------------------------------------------------------------
+1       608      Mark Hellegers (mark@firedisk.net)

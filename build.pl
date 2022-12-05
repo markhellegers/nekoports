@@ -97,11 +97,16 @@ sub build_port {
 		die "Failed to initialize repository";
 	}
 
-	print "Applying patch\n";
 	my $patch_file = "$nekoports_dir/$port_path/patches/$source_dir.patch";
-	$system_result = system("git am $patch_file -q");
-	if ($system_result) {
-		die "Failed to apply patch";
+	if (-e $patch_file) {
+		print "Applying patch\n";
+		$system_result = system("git am $patch_file -q");
+		if ($system_result) {
+			die "Failed to apply patch";
+		}
+	}
+	else {
+		print "No patch to apply\n";
 	}
 
 	print "Setting up environment\n";
@@ -130,7 +135,9 @@ sub build_port {
 
 	print "Creating distribution directories\n";
 	my $nekoports_install_nekoware_dir = "$nekoports_install_dir/usr/nekoware";
-	mkpath("$nekoports_install_nekoware_dir/patches");
+	if (-e $patch_file) {
+		mkpath("$nekoports_install_nekoware_dir/patches");
+	}
 	mkpath("$nekoports_install_nekoware_dir/src");
 	mkpath("$nekoports_install_nekoware_dir/relnotes");
 	mkpath("$nekoports_install_nekoware_dir/dist");
@@ -146,7 +153,9 @@ sub build_port {
 	$nekoports_relnotes_path =~ s/recipe/relnotes/g;
 	my $nekoports_idb_path = "$nekoports_dir/$port_path/dist/neko_$nekoports_port.idb";
 	my $nekoports_spec_path = "$nekoports_dir/$port_path/dist/neko_$nekoports_port.spec";
-	copy($patch_file, "$nekoports_install_nekoware_dir/patches") or die "Failed to copy patch $patch_file to $nekoports_install_nekoware_dir/patches";
+	if (-e $patch_file) {
+		copy($patch_file, "$nekoports_install_nekoware_dir/patches") or die "Failed to copy patch $patch_file to $nekoports_install_nekoware_dir/patches";
+	}
 	copy($nekoports_source_file_path, "$nekoports_install_nekoware_dir/src") or die "Failed to copy source $source_filename to $nekoports_install_nekoware_dir/src";
 	copy($nekoports_relnotes_path, "$nekoports_install_nekoware_dir/relnotes") or die "Failed to copy release notes $nekoports_relnotes_path to $nekoports_install_nekoware_dir/relnotes";
 	copy($nekoports_idb_path, "$nekoports_install_nekoware_dir/dist") or die "Failed to copy idb file $nekoports_idb_path to $nekoports_install_nekoware_dir/dist";
@@ -170,3 +179,5 @@ sub build_port {
 
 print "Building port of bash\n";
 build_port("app-shells/bash", "bash-5.1.16.recipe");
+print "Building port of less\n";
+build_port("sys-apps/less", "less-608.recipe");
