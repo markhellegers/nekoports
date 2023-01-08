@@ -1,0 +1,18 @@
+SUMMARY="Git, distributed version control system"
+DESCRIPTION="Git is a free and open source distributed version control system \
+designed to handle everything from small to very large projects with speed \
+and efficiency.
+"
+HOMEPAGE="https://git-scm.com"
+COPYRIGHT="2005-2022 Git Authors (see git website for list)"
+LICENSE="GNU GPL v2"
+REVISION="1"
+SOURCE_URI="https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.36.0.tar.gz"
+ENVIRONMENT="
+CC c99
+CFLAGS '-O3 -I/usr/nekoware/include'
+CPP 'c99 -E'
+LDFLAGS -L/usr/nekoware/lib
+"
+CONFIGURE_FLAGS="--without-tcltk"
+MAKE_FLAGS="INSTALL_SYMLINKS=1"

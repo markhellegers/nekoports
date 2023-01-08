@@ -21,6 +21,8 @@ sub build_port {
 	my $source_uri;
 	my $system_result;
 	my %environment_variables;
+	my $configure_flags;
+	my $make_flags;
 
 	# Open the recipe file and read all the interesting data
 	open(RECIPE, $nekoports_recipe_path) or die "Unable to open recipe at $nekoports_recipe_path";
@@ -49,6 +51,18 @@ sub build_port {
 				chomp($line);
 			}
 
+		}
+		elsif ($line =~ /^CONFIGURE_FLAGS/) {
+			my @line_fields = split(/=/, $line);
+			$configure_flags = @line_fields[1];
+			# Strip the quotes from the configure flags
+			$configure_flags =~ s/\"//g;
+		}
+		elsif ($line =~ /^MAKE_FLAGS/) {
+			my @line_fields = split(/=/, $line, 2);
+			$make_flags = @line_fields[1];
+			# Strip the quotes from the configure flags
+			$make_flags =~ s/\"//g;
 		}
 	}
 	close RECIPE;
@@ -116,19 +130,19 @@ sub build_port {
 	}
 
 	print "Configuring source\n";
-	$system_result = system("./configure --prefix=/usr/nekoware");
+	$system_result = system("./configure --prefix=/usr/nekoware $configure_flags");
 	if ($system_result) {
 		die "Failed to configure";
 	}
 
 	print "Building source\n";
-	$system_result = system("gmake");
+	$system_result = system("gmake $make_flags");
 	if ($system_result) {
 		die "Failed to build";
 	}
 
 	print "Installing in temporary directory\n";
-	$system_result = system("gmake DESTDIR=$nekoports_install_dir install");
+	$system_result = system("gmake DESTDIR=$nekoports_install_dir install $make_flags");
 	if ($system_result) {
 		die "Failed to install";
 	}
@@ -181,3 +195,5 @@ print "Building port of bash\n";
 build_port("app-shells/bash", "bash-5.1.16.recipe");
 print "Building port of less\n";
 build_port("sys-apps/less", "less-608.recipe");
+print "Building port of git\n";
+build_port("dev-vcs/git", "git-2.36.0.recipe");

@@ -1,0 +1,48 @@
+From 65f6e18ec6368322bf2a7073ed30730e326a8a85 Mon Sep 17 00:00:00 2001
+From: Mark Hellegers <mark@firedisk.net>
+Date: Mon, 5 Dec 2022 17:16:37 +0100
+Subject: [PATCH] Fixes to make it work on Irix
+
+---
+ http.c        | 2 +-
+ run-command.c | 4 ++--
+ 2 files changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/http.c b/http.c
+index 229da4d..974818e 100644
+--- a/http.c
++++ b/http.c
+@@ -1918,7 +1918,7 @@ static int http_request_reauth(const char *url,
+ 			return HTTP_START_FAILED;
+ 		}
+ 		rewind(result);
+-		if (ftruncate(fileno(result), 0) < 0) {
++		if (ftruncate(fileno((FILE *)result), 0) < 0) {
+ 			error_errno("unable to truncate a file");
+ 			return HTTP_START_FAILED;
+ 		}
+diff --git a/run-command.c b/run-command.c
+index a8501e3..999c8f5 100644
+--- a/run-command.c
++++ b/run-command.c
+@@ -515,7 +515,7 @@ static void atfork_prepare(struct atfork_state *as)
+ #endif
+ }
+ 
+-static void atfork_parent(struct atfork_state *as)
++static void atfork_parent_git(struct atfork_state *as)
+ {
+ #ifdef NO_PTHREADS
+ 	if (sigprocmask(SIG_SETMASK, &as->old, NULL))
+@@ -847,7 +847,7 @@ int start_command(struct child_process *cmd)
+ 			child_die(CHILD_ERR_ERRNO);
+ 		}
+ 	}
+-	atfork_parent(&as);
++	atfork_parent_git(&as);
+ 	if (cmd->pid < 0)
+ 		error_errno("cannot fork() for %s", cmd->args.v[0]);
+ 	else if (cmd->clean_on_exit)
+-- 
+2.36.0
+

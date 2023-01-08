@@ -1,0 +1,460 @@
+f 0755 root sys /usr/nekoware/bin/git /usr/nekoware/bin/git neko_git.sw.eoe
+f 0755 root sys /usr/nekoware/bin/git /usr/nekoware/bin/git neko_git.sw.eoe
+f 0755 root sys /usr/nekoware/bin/git-cvsserver /usr/nekoware/bin/git-cvsserver neko_git.sw.eoe
+f 0755 root sys /usr/nekoware/bin/git-cvsserver /usr/nekoware/bin/git-cvsserver neko_git.sw.eoe
+l 0755 root sys /usr/nekoware/bin/git-receive-pack /usr/nekoware/bin/git-receive-pack neko_git.sw.eoe symval(git)
+l 0755 root sys /usr/nekoware/bin/git-receive-pack /usr/nekoware/bin/git-receive-pack neko_git.sw.eoe symval(git)
+f 0755 root sys /usr/nekoware/bin/git-shell /usr/nekoware/bin/git-shell neko_git.sw.eoe
+f 0755 root sys /usr/nekoware/bin/git-shell /usr/nekoware/bin/git-shell neko_git.sw.eoe
+l 0755 root sys /usr/nekoware/bin/git-upload-archive /usr/nekoware/bin/git-upload-archive neko_git.sw.eoe symval(git)
+l 0755 root sys /usr/nekoware/bin/git-upload-archive /usr/nekoware/bin/git-upload-archive neko_git.sw.eoe symval(git)
+l 0755 root sys /usr/nekoware/bin/git-upload-pack /usr/nekoware/bin/git-upload-pack neko_git.sw.eoe symval(git)
+l 0755 root sys /usr/nekoware/bin/git-upload-pack /usr/nekoware/bin/git-upload-pack neko_git.sw.eoe symval(git)
+f 0644 root sys /usr/nekoware/dist/neko_git.idb /usr/nekoware/dist/neko_git.idb neko_git.opt.dist norqs
+f 0644 root sys /usr/nekoware/dist/neko_git.spec /usr/nekoware/dist/neko_git.spec neko_git.opt.dist norqs
+l 0755 root sys /usr/nekoware/libexec/git-core/git /usr/nekoware/libexec/git-core/git neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git /usr/nekoware/libexec/git-core/git neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-add /usr/nekoware/libexec/git-core/git-add neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-add /usr/nekoware/libexec/git-core/git-add neko_git.sw.eoe symval(../../bin/git)
+f 0755 root sys /usr/nekoware/libexec/git-core/git-add--interactive /usr/nekoware/libexec/git-core/git-add--interactive neko_git.sw.eoe
+f 0755 root sys /usr/nekoware/libexec/git-core/git-add--interactive /usr/nekoware/libexec/git-core/git-add--interactive neko_git.sw.eoe
+l 0755 root sys /usr/nekoware/libexec/git-core/git-am /usr/nekoware/libexec/git-core/git-am neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-am /usr/nekoware/libexec/git-core/git-am neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-annotate /usr/nekoware/libexec/git-core/git-annotate neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-annotate /usr/nekoware/libexec/git-core/git-annotate neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-apply /usr/nekoware/libexec/git-core/git-apply neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-apply /usr/nekoware/libexec/git-core/git-apply neko_git.sw.eoe symval(../../bin/git)
+f 0755 root sys /usr/nekoware/libexec/git-core/git-archimport /usr/nekoware/libexec/git-core/git-archimport neko_git.sw.eoe
+f 0755 root sys /usr/nekoware/libexec/git-core/git-archimport /usr/nekoware/libexec/git-core/git-archimport neko_git.sw.eoe
+l 0755 root sys /usr/nekoware/libexec/git-core/git-archive /usr/nekoware/libexec/git-core/git-archive neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-archive /usr/nekoware/libexec/git-core/git-archive neko_git.sw.eoe symval(../../bin/git)
+f 0755 root sys /usr/nekoware/libexec/git-core/git-bisect /usr/nekoware/libexec/git-core/git-bisect neko_git.sw.eoe
+f 0755 root sys /usr/nekoware/libexec/git-core/git-bisect /usr/nekoware/libexec/git-core/git-bisect neko_git.sw.eoe
+l 0755 root sys /usr/nekoware/libexec/git-core/git-bisect--helper /usr/nekoware/libexec/git-core/git-bisect--helper neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-bisect--helper /usr/nekoware/libexec/git-core/git-bisect--helper neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-blame /usr/nekoware/libexec/git-core/git-blame neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-blame /usr/nekoware/libexec/git-core/git-blame neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-branch /usr/nekoware/libexec/git-core/git-branch neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-branch /usr/nekoware/libexec/git-core/git-branch neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-bugreport /usr/nekoware/libexec/git-core/git-bugreport neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-bugreport /usr/nekoware/libexec/git-core/git-bugreport neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-bundle /usr/nekoware/libexec/git-core/git-bundle neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-bundle /usr/nekoware/libexec/git-core/git-bundle neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-cat-file /usr/nekoware/libexec/git-core/git-cat-file neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-cat-file /usr/nekoware/libexec/git-core/git-cat-file neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-check-attr /usr/nekoware/libexec/git-core/git-check-attr neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-check-attr /usr/nekoware/libexec/git-core/git-check-attr neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-check-ignore /usr/nekoware/libexec/git-core/git-check-ignore neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-check-ignore /usr/nekoware/libexec/git-core/git-check-ignore neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-check-mailmap /usr/nekoware/libexec/git-core/git-check-mailmap neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-check-mailmap /usr/nekoware/libexec/git-core/git-check-mailmap neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-check-ref-format /usr/nekoware/libexec/git-core/git-check-ref-format neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-check-ref-format /usr/nekoware/libexec/git-core/git-check-ref-format neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-checkout /usr/nekoware/libexec/git-core/git-checkout neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-checkout /usr/nekoware/libexec/git-core/git-checkout neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-checkout--worker /usr/nekoware/libexec/git-core/git-checkout--worker neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-checkout--worker /usr/nekoware/libexec/git-core/git-checkout--worker neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-checkout-index /usr/nekoware/libexec/git-core/git-checkout-index neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-checkout-index /usr/nekoware/libexec/git-core/git-checkout-index neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-cherry /usr/nekoware/libexec/git-core/git-cherry neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-cherry /usr/nekoware/libexec/git-core/git-cherry neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-cherry-pick /usr/nekoware/libexec/git-core/git-cherry-pick neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-cherry-pick /usr/nekoware/libexec/git-core/git-cherry-pick neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-clean /usr/nekoware/libexec/git-core/git-clean neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-clean /usr/nekoware/libexec/git-core/git-clean neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-clone /usr/nekoware/libexec/git-core/git-clone neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-clone /usr/nekoware/libexec/git-core/git-clone neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-column /usr/nekoware/libexec/git-core/git-column neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-column /usr/nekoware/libexec/git-core/git-column neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-commit /usr/nekoware/libexec/git-core/git-commit neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-commit /usr/nekoware/libexec/git-core/git-commit neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-commit-graph /usr/nekoware/libexec/git-core/git-commit-graph neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-commit-graph /usr/nekoware/libexec/git-core/git-commit-graph neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-commit-tree /usr/nekoware/libexec/git-core/git-commit-tree neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-commit-tree /usr/nekoware/libexec/git-core/git-commit-tree neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-config /usr/nekoware/libexec/git-core/git-config neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-config /usr/nekoware/libexec/git-core/git-config neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-count-objects /usr/nekoware/libexec/git-core/git-count-objects neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-count-objects /usr/nekoware/libexec/git-core/git-count-objects neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-credential /usr/nekoware/libexec/git-core/git-credential neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-credential /usr/nekoware/libexec/git-core/git-credential neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-credential-cache /usr/nekoware/libexec/git-core/git-credential-cache neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-credential-cache /usr/nekoware/libexec/git-core/git-credential-cache neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-credential-cache--daemon /usr/nekoware/libexec/git-core/git-credential-cache--daemon neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-credential-cache--daemon /usr/nekoware/libexec/git-core/git-credential-cache--daemon neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-credential-store /usr/nekoware/libexec/git-core/git-credential-store neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-credential-store /usr/nekoware/libexec/git-core/git-credential-store neko_git.sw.eoe symval(../../bin/git)
+f 0755 root sys /usr/nekoware/libexec/git-core/git-cvsexportcommit /usr/nekoware/libexec/git-core/git-cvsexportcommit neko_git.sw.eoe
+f 0755 root sys /usr/nekoware/libexec/git-core/git-cvsexportcommit /usr/nekoware/libexec/git-core/git-cvsexportcommit neko_git.sw.eoe
+f 0755 root sys /usr/nekoware/libexec/git-core/git-cvsimport /usr/nekoware/libexec/git-core/git-cvsimport neko_git.sw.eoe
+f 0755 root sys /usr/nekoware/libexec/git-core/git-cvsimport /usr/nekoware/libexec/git-core/git-cvsimport neko_git.sw.eoe
+l 0755 root sys /usr/nekoware/libexec/git-core/git-cvsserver /usr/nekoware/libexec/git-core/git-cvsserver neko_git.sw.eoe symval(../../bin/git-cvsserver)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-cvsserver /usr/nekoware/libexec/git-core/git-cvsserver neko_git.sw.eoe symval(../../bin/git-cvsserver)
+f 0755 root sys /usr/nekoware/libexec/git-core/git-daemon /usr/nekoware/libexec/git-core/git-daemon neko_git.sw.eoe
+f 0755 root sys /usr/nekoware/libexec/git-core/git-daemon /usr/nekoware/libexec/git-core/git-daemon neko_git.sw.eoe
+l 0755 root sys /usr/nekoware/libexec/git-core/git-describe /usr/nekoware/libexec/git-core/git-describe neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-describe /usr/nekoware/libexec/git-core/git-describe neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-diff /usr/nekoware/libexec/git-core/git-diff neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-diff /usr/nekoware/libexec/git-core/git-diff neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-diff-files /usr/nekoware/libexec/git-core/git-diff-files neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-diff-files /usr/nekoware/libexec/git-core/git-diff-files neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-diff-index /usr/nekoware/libexec/git-core/git-diff-index neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-diff-index /usr/nekoware/libexec/git-core/git-diff-index neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-diff-tree /usr/nekoware/libexec/git-core/git-diff-tree neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-diff-tree /usr/nekoware/libexec/git-core/git-diff-tree neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-difftool /usr/nekoware/libexec/git-core/git-difftool neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-difftool /usr/nekoware/libexec/git-core/git-difftool neko_git.sw.eoe symval(../../bin/git)
+f 0755 root sys /usr/nekoware/libexec/git-core/git-difftool--helper /usr/nekoware/libexec/git-core/git-difftool--helper neko_git.sw.eoe
+f 0755 root sys /usr/nekoware/libexec/git-core/git-difftool--helper /usr/nekoware/libexec/git-core/git-difftool--helper neko_git.sw.eoe
+l 0755 root sys /usr/nekoware/libexec/git-core/git-env--helper /usr/nekoware/libexec/git-core/git-env--helper neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-env--helper /usr/nekoware/libexec/git-core/git-env--helper neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-fast-export /usr/nekoware/libexec/git-core/git-fast-export neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-fast-export /usr/nekoware/libexec/git-core/git-fast-export neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-fast-import /usr/nekoware/libexec/git-core/git-fast-import neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-fast-import /usr/nekoware/libexec/git-core/git-fast-import neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-fetch /usr/nekoware/libexec/git-core/git-fetch neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-fetch /usr/nekoware/libexec/git-core/git-fetch neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-fetch-pack /usr/nekoware/libexec/git-core/git-fetch-pack neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-fetch-pack /usr/nekoware/libexec/git-core/git-fetch-pack neko_git.sw.eoe symval(../../bin/git)
+f 0755 root sys /usr/nekoware/libexec/git-core/git-filter-branch /usr/nekoware/libexec/git-core/git-filter-branch neko_git.sw.eoe
+f 0755 root sys /usr/nekoware/libexec/git-core/git-filter-branch /usr/nekoware/libexec/git-core/git-filter-branch neko_git.sw.eoe
+l 0755 root sys /usr/nekoware/libexec/git-core/git-fmt-merge-msg /usr/nekoware/libexec/git-core/git-fmt-merge-msg neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-fmt-merge-msg /usr/nekoware/libexec/git-core/git-fmt-merge-msg neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-for-each-ref /usr/nekoware/libexec/git-core/git-for-each-ref neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-for-each-ref /usr/nekoware/libexec/git-core/git-for-each-ref neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-for-each-repo /usr/nekoware/libexec/git-core/git-for-each-repo neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-for-each-repo /usr/nekoware/libexec/git-core/git-for-each-repo neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-format-patch /usr/nekoware/libexec/git-core/git-format-patch neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-format-patch /usr/nekoware/libexec/git-core/git-format-patch neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-fsck /usr/nekoware/libexec/git-core/git-fsck neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-fsck /usr/nekoware/libexec/git-core/git-fsck neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-fsck-objects /usr/nekoware/libexec/git-core/git-fsck-objects neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-fsck-objects /usr/nekoware/libexec/git-core/git-fsck-objects neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-fsmonitor--daemon /usr/nekoware/libexec/git-core/git-fsmonitor--daemon neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-fsmonitor--daemon /usr/nekoware/libexec/git-core/git-fsmonitor--daemon neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-gc /usr/nekoware/libexec/git-core/git-gc neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-gc /usr/nekoware/libexec/git-core/git-gc neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-get-tar-commit-id /usr/nekoware/libexec/git-core/git-get-tar-commit-id neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-get-tar-commit-id /usr/nekoware/libexec/git-core/git-get-tar-commit-id neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-grep /usr/nekoware/libexec/git-core/git-grep neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-grep /usr/nekoware/libexec/git-core/git-grep neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-hash-object /usr/nekoware/libexec/git-core/git-hash-object neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-hash-object /usr/nekoware/libexec/git-core/git-hash-object neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-help /usr/nekoware/libexec/git-core/git-help neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-help /usr/nekoware/libexec/git-core/git-help neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-hook /usr/nekoware/libexec/git-core/git-hook neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-hook /usr/nekoware/libexec/git-core/git-hook neko_git.sw.eoe symval(../../bin/git)
+f 0755 root sys /usr/nekoware/libexec/git-core/git-http-backend /usr/nekoware/libexec/git-core/git-http-backend neko_git.sw.eoe
+f 0755 root sys /usr/nekoware/libexec/git-core/git-http-backend /usr/nekoware/libexec/git-core/git-http-backend neko_git.sw.eoe
+f 0755 root sys /usr/nekoware/libexec/git-core/git-http-fetch /usr/nekoware/libexec/git-core/git-http-fetch neko_git.sw.eoe
+f 0755 root sys /usr/nekoware/libexec/git-core/git-http-fetch /usr/nekoware/libexec/git-core/git-http-fetch neko_git.sw.eoe
+f 0755 root sys /usr/nekoware/libexec/git-core/git-http-push /usr/nekoware/libexec/git-core/git-http-push neko_git.sw.eoe
+f 0755 root sys /usr/nekoware/libexec/git-core/git-http-push /usr/nekoware/libexec/git-core/git-http-push neko_git.sw.eoe
+f 0755 root sys /usr/nekoware/libexec/git-core/git-imap-send /usr/nekoware/libexec/git-core/git-imap-send neko_git.sw.eoe
+f 0755 root sys /usr/nekoware/libexec/git-core/git-imap-send /usr/nekoware/libexec/git-core/git-imap-send neko_git.sw.eoe
+l 0755 root sys /usr/nekoware/libexec/git-core/git-index-pack /usr/nekoware/libexec/git-core/git-index-pack neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-index-pack /usr/nekoware/libexec/git-core/git-index-pack neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-init /usr/nekoware/libexec/git-core/git-init neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-init /usr/nekoware/libexec/git-core/git-init neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-init-db /usr/nekoware/libexec/git-core/git-init-db neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-init-db /usr/nekoware/libexec/git-core/git-init-db neko_git.sw.eoe symval(../../bin/git)
+f 0755 root sys /usr/nekoware/libexec/git-core/git-instaweb /usr/nekoware/libexec/git-core/git-instaweb neko_git.sw.eoe
+f 0755 root sys /usr/nekoware/libexec/git-core/git-instaweb /usr/nekoware/libexec/git-core/git-instaweb neko_git.sw.eoe
+l 0755 root sys /usr/nekoware/libexec/git-core/git-interpret-trailers /usr/nekoware/libexec/git-core/git-interpret-trailers neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-interpret-trailers /usr/nekoware/libexec/git-core/git-interpret-trailers neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-log /usr/nekoware/libexec/git-core/git-log neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-log /usr/nekoware/libexec/git-core/git-log neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-ls-files /usr/nekoware/libexec/git-core/git-ls-files neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-ls-files /usr/nekoware/libexec/git-core/git-ls-files neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-ls-remote /usr/nekoware/libexec/git-core/git-ls-remote neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-ls-remote /usr/nekoware/libexec/git-core/git-ls-remote neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-ls-tree /usr/nekoware/libexec/git-core/git-ls-tree neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-ls-tree /usr/nekoware/libexec/git-core/git-ls-tree neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-mailinfo /usr/nekoware/libexec/git-core/git-mailinfo neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-mailinfo /usr/nekoware/libexec/git-core/git-mailinfo neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-mailsplit /usr/nekoware/libexec/git-core/git-mailsplit neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-mailsplit /usr/nekoware/libexec/git-core/git-mailsplit neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-maintenance /usr/nekoware/libexec/git-core/git-maintenance neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-maintenance /usr/nekoware/libexec/git-core/git-maintenance neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-merge /usr/nekoware/libexec/git-core/git-merge neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-merge /usr/nekoware/libexec/git-core/git-merge neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-merge-base /usr/nekoware/libexec/git-core/git-merge-base neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-merge-base /usr/nekoware/libexec/git-core/git-merge-base neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-merge-file /usr/nekoware/libexec/git-core/git-merge-file neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-merge-file /usr/nekoware/libexec/git-core/git-merge-file neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-merge-index /usr/nekoware/libexec/git-core/git-merge-index neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-merge-index /usr/nekoware/libexec/git-core/git-merge-index neko_git.sw.eoe symval(../../bin/git)
+f 0755 root sys /usr/nekoware/libexec/git-core/git-merge-octopus /usr/nekoware/libexec/git-core/git-merge-octopus neko_git.sw.eoe
+f 0755 root sys /usr/nekoware/libexec/git-core/git-merge-octopus /usr/nekoware/libexec/git-core/git-merge-octopus neko_git.sw.eoe
+f 0755 root sys /usr/nekoware/libexec/git-core/git-merge-one-file /usr/nekoware/libexec/git-core/git-merge-one-file neko_git.sw.eoe
+f 0755 root sys /usr/nekoware/libexec/git-core/git-merge-one-file /usr/nekoware/libexec/git-core/git-merge-one-file neko_git.sw.eoe
+l 0755 root sys /usr/nekoware/libexec/git-core/git-merge-ours /usr/nekoware/libexec/git-core/git-merge-ours neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-merge-ours /usr/nekoware/libexec/git-core/git-merge-ours neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-merge-recursive /usr/nekoware/libexec/git-core/git-merge-recursive neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-merge-recursive /usr/nekoware/libexec/git-core/git-merge-recursive neko_git.sw.eoe symval(../../bin/git)
+f 0755 root sys /usr/nekoware/libexec/git-core/git-merge-resolve /usr/nekoware/libexec/git-core/git-merge-resolve neko_git.sw.eoe
+f 0755 root sys /usr/nekoware/libexec/git-core/git-merge-resolve /usr/nekoware/libexec/git-core/git-merge-resolve neko_git.sw.eoe
+l 0755 root sys /usr/nekoware/libexec/git-core/git-merge-subtree /usr/nekoware/libexec/git-core/git-merge-subtree neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-merge-subtree /usr/nekoware/libexec/git-core/git-merge-subtree neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-merge-tree /usr/nekoware/libexec/git-core/git-merge-tree neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-merge-tree /usr/nekoware/libexec/git-core/git-merge-tree neko_git.sw.eoe symval(../../bin/git)
+f 0755 root sys /usr/nekoware/libexec/git-core/git-mergetool /usr/nekoware/libexec/git-core/git-mergetool neko_git.sw.eoe
+f 0755 root sys /usr/nekoware/libexec/git-core/git-mergetool /usr/nekoware/libexec/git-core/git-mergetool neko_git.sw.eoe
+f 0644 root sys /usr/nekoware/libexec/git-core/git-mergetool--lib /usr/nekoware/libexec/git-core/git-mergetool--lib neko_git.sw.eoe
+f 0644 root sys /usr/nekoware/libexec/git-core/git-mergetool--lib /usr/nekoware/libexec/git-core/git-mergetool--lib neko_git.sw.eoe
+l 0755 root sys /usr/nekoware/libexec/git-core/git-mktag /usr/nekoware/libexec/git-core/git-mktag neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-mktag /usr/nekoware/libexec/git-core/git-mktag neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-mktree /usr/nekoware/libexec/git-core/git-mktree neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-mktree /usr/nekoware/libexec/git-core/git-mktree neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-multi-pack-index /usr/nekoware/libexec/git-core/git-multi-pack-index neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-multi-pack-index /usr/nekoware/libexec/git-core/git-multi-pack-index neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-mv /usr/nekoware/libexec/git-core/git-mv neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-mv /usr/nekoware/libexec/git-core/git-mv neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-name-rev /usr/nekoware/libexec/git-core/git-name-rev neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-name-rev /usr/nekoware/libexec/git-core/git-name-rev neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-notes /usr/nekoware/libexec/git-core/git-notes neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-notes /usr/nekoware/libexec/git-core/git-notes neko_git.sw.eoe symval(../../bin/git)
+f 0755 root sys /usr/nekoware/libexec/git-core/git-p4 /usr/nekoware/libexec/git-core/git-p4 neko_git.sw.eoe
+f 0755 root sys /usr/nekoware/libexec/git-core/git-p4 /usr/nekoware/libexec/git-core/git-p4 neko_git.sw.eoe
+l 0755 root sys /usr/nekoware/libexec/git-core/git-pack-objects /usr/nekoware/libexec/git-core/git-pack-objects neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-pack-objects /usr/nekoware/libexec/git-core/git-pack-objects neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-pack-redundant /usr/nekoware/libexec/git-core/git-pack-redundant neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-pack-redundant /usr/nekoware/libexec/git-core/git-pack-redundant neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-pack-refs /usr/nekoware/libexec/git-core/git-pack-refs neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-pack-refs /usr/nekoware/libexec/git-core/git-pack-refs neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-patch-id /usr/nekoware/libexec/git-core/git-patch-id neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-patch-id /usr/nekoware/libexec/git-core/git-patch-id neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-prune /usr/nekoware/libexec/git-core/git-prune neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-prune /usr/nekoware/libexec/git-core/git-prune neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-prune-packed /usr/nekoware/libexec/git-core/git-prune-packed neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-prune-packed /usr/nekoware/libexec/git-core/git-prune-packed neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-pull /usr/nekoware/libexec/git-core/git-pull neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-pull /usr/nekoware/libexec/git-core/git-pull neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-push /usr/nekoware/libexec/git-core/git-push neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-push /usr/nekoware/libexec/git-core/git-push neko_git.sw.eoe symval(../../bin/git)
+f 0755 root sys /usr/nekoware/libexec/git-core/git-quiltimport /usr/nekoware/libexec/git-core/git-quiltimport neko_git.sw.eoe
+f 0755 root sys /usr/nekoware/libexec/git-core/git-quiltimport /usr/nekoware/libexec/git-core/git-quiltimport neko_git.sw.eoe
+l 0755 root sys /usr/nekoware/libexec/git-core/git-range-diff /usr/nekoware/libexec/git-core/git-range-diff neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-range-diff /usr/nekoware/libexec/git-core/git-range-diff neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-read-tree /usr/nekoware/libexec/git-core/git-read-tree neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-read-tree /usr/nekoware/libexec/git-core/git-read-tree neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-rebase /usr/nekoware/libexec/git-core/git-rebase neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-rebase /usr/nekoware/libexec/git-core/git-rebase neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-receive-pack /usr/nekoware/libexec/git-core/git-receive-pack neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-receive-pack /usr/nekoware/libexec/git-core/git-receive-pack neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-reflog /usr/nekoware/libexec/git-core/git-reflog neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-reflog /usr/nekoware/libexec/git-core/git-reflog neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-remote /usr/nekoware/libexec/git-core/git-remote neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-remote /usr/nekoware/libexec/git-core/git-remote neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-remote-ext /usr/nekoware/libexec/git-core/git-remote-ext neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-remote-ext /usr/nekoware/libexec/git-core/git-remote-ext neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-remote-fd /usr/nekoware/libexec/git-core/git-remote-fd neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-remote-fd /usr/nekoware/libexec/git-core/git-remote-fd neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-remote-ftp /usr/nekoware/libexec/git-core/git-remote-ftp neko_git.sw.eoe symval(git-remote-http)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-remote-ftp /usr/nekoware/libexec/git-core/git-remote-ftp neko_git.sw.eoe symval(git-remote-http)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-remote-ftps /usr/nekoware/libexec/git-core/git-remote-ftps neko_git.sw.eoe symval(git-remote-http)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-remote-ftps /usr/nekoware/libexec/git-core/git-remote-ftps neko_git.sw.eoe symval(git-remote-http)
+f 0755 root sys /usr/nekoware/libexec/git-core/git-remote-http /usr/nekoware/libexec/git-core/git-remote-http neko_git.sw.eoe
+f 0755 root sys /usr/nekoware/libexec/git-core/git-remote-http /usr/nekoware/libexec/git-core/git-remote-http neko_git.sw.eoe
+l 0755 root sys /usr/nekoware/libexec/git-core/git-remote-https /usr/nekoware/libexec/git-core/git-remote-https neko_git.sw.eoe symval(git-remote-http)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-remote-https /usr/nekoware/libexec/git-core/git-remote-https neko_git.sw.eoe symval(git-remote-http)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-repack /usr/nekoware/libexec/git-core/git-repack neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-repack /usr/nekoware/libexec/git-core/git-repack neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-replace /usr/nekoware/libexec/git-core/git-replace neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-replace /usr/nekoware/libexec/git-core/git-replace neko_git.sw.eoe symval(../../bin/git)
+f 0755 root sys /usr/nekoware/libexec/git-core/git-request-pull /usr/nekoware/libexec/git-core/git-request-pull neko_git.sw.eoe
+f 0755 root sys /usr/nekoware/libexec/git-core/git-request-pull /usr/nekoware/libexec/git-core/git-request-pull neko_git.sw.eoe
+l 0755 root sys /usr/nekoware/libexec/git-core/git-rerere /usr/nekoware/libexec/git-core/git-rerere neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-rerere /usr/nekoware/libexec/git-core/git-rerere neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-reset /usr/nekoware/libexec/git-core/git-reset neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-reset /usr/nekoware/libexec/git-core/git-reset neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-restore /usr/nekoware/libexec/git-core/git-restore neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-restore /usr/nekoware/libexec/git-core/git-restore neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-rev-list /usr/nekoware/libexec/git-core/git-rev-list neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-rev-list /usr/nekoware/libexec/git-core/git-rev-list neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-rev-parse /usr/nekoware/libexec/git-core/git-rev-parse neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-rev-parse /usr/nekoware/libexec/git-core/git-rev-parse neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-revert /usr/nekoware/libexec/git-core/git-revert neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-revert /usr/nekoware/libexec/git-core/git-revert neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-rm /usr/nekoware/libexec/git-core/git-rm neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-rm /usr/nekoware/libexec/git-core/git-rm neko_git.sw.eoe symval(../../bin/git)
+f 0755 root sys /usr/nekoware/libexec/git-core/git-send-email /usr/nekoware/libexec/git-core/git-send-email neko_git.sw.eoe
+f 0755 root sys /usr/nekoware/libexec/git-core/git-send-email /usr/nekoware/libexec/git-core/git-send-email neko_git.sw.eoe
+l 0755 root sys /usr/nekoware/libexec/git-core/git-send-pack /usr/nekoware/libexec/git-core/git-send-pack neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-send-pack /usr/nekoware/libexec/git-core/git-send-pack neko_git.sw.eoe symval(../../bin/git)
+f 0644 root sys /usr/nekoware/libexec/git-core/git-sh-i18n /usr/nekoware/libexec/git-core/git-sh-i18n neko_git.sw.eoe
+f 0644 root sys /usr/nekoware/libexec/git-core/git-sh-i18n /usr/nekoware/libexec/git-core/git-sh-i18n neko_git.sw.eoe
+f 0755 root sys /usr/nekoware/libexec/git-core/git-sh-i18n--envsubst /usr/nekoware/libexec/git-core/git-sh-i18n--envsubst neko_git.sw.eoe
+f 0755 root sys /usr/nekoware/libexec/git-core/git-sh-i18n--envsubst /usr/nekoware/libexec/git-core/git-sh-i18n--envsubst neko_git.sw.eoe
+f 0644 root sys /usr/nekoware/libexec/git-core/git-sh-setup /usr/nekoware/libexec/git-core/git-sh-setup neko_git.sw.eoe
+f 0644 root sys /usr/nekoware/libexec/git-core/git-sh-setup /usr/nekoware/libexec/git-core/git-sh-setup neko_git.sw.eoe
+l 0755 root sys /usr/nekoware/libexec/git-core/git-shell /usr/nekoware/libexec/git-core/git-shell neko_git.sw.eoe symval(../../bin/git-shell)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-shell /usr/nekoware/libexec/git-core/git-shell neko_git.sw.eoe symval(../../bin/git-shell)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-shortlog /usr/nekoware/libexec/git-core/git-shortlog neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-shortlog /usr/nekoware/libexec/git-core/git-shortlog neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-show /usr/nekoware/libexec/git-core/git-show neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-show /usr/nekoware/libexec/git-core/git-show neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-show-branch /usr/nekoware/libexec/git-core/git-show-branch neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-show-branch /usr/nekoware/libexec/git-core/git-show-branch neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-show-index /usr/nekoware/libexec/git-core/git-show-index neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-show-index /usr/nekoware/libexec/git-core/git-show-index neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-show-ref /usr/nekoware/libexec/git-core/git-show-ref neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-show-ref /usr/nekoware/libexec/git-core/git-show-ref neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-sparse-checkout /usr/nekoware/libexec/git-core/git-sparse-checkout neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-sparse-checkout /usr/nekoware/libexec/git-core/git-sparse-checkout neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-stage /usr/nekoware/libexec/git-core/git-stage neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-stage /usr/nekoware/libexec/git-core/git-stage neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-stash /usr/nekoware/libexec/git-core/git-stash neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-stash /usr/nekoware/libexec/git-core/git-stash neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-status /usr/nekoware/libexec/git-core/git-status neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-status /usr/nekoware/libexec/git-core/git-status neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-stripspace /usr/nekoware/libexec/git-core/git-stripspace neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-stripspace /usr/nekoware/libexec/git-core/git-stripspace neko_git.sw.eoe symval(../../bin/git)
+f 0755 root sys /usr/nekoware/libexec/git-core/git-submodule /usr/nekoware/libexec/git-core/git-submodule neko_git.sw.eoe
+f 0755 root sys /usr/nekoware/libexec/git-core/git-submodule /usr/nekoware/libexec/git-core/git-submodule neko_git.sw.eoe
+l 0755 root sys /usr/nekoware/libexec/git-core/git-submodule--helper /usr/nekoware/libexec/git-core/git-submodule--helper neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-submodule--helper /usr/nekoware/libexec/git-core/git-submodule--helper neko_git.sw.eoe symval(../../bin/git)
+f 0755 root sys /usr/nekoware/libexec/git-core/git-svn /usr/nekoware/libexec/git-core/git-svn neko_git.sw.eoe
+f 0755 root sys /usr/nekoware/libexec/git-core/git-svn /usr/nekoware/libexec/git-core/git-svn neko_git.sw.eoe
+l 0755 root sys /usr/nekoware/libexec/git-core/git-switch /usr/nekoware/libexec/git-core/git-switch neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-switch /usr/nekoware/libexec/git-core/git-switch neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-symbolic-ref /usr/nekoware/libexec/git-core/git-symbolic-ref neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-symbolic-ref /usr/nekoware/libexec/git-core/git-symbolic-ref neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-tag /usr/nekoware/libexec/git-core/git-tag neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-tag /usr/nekoware/libexec/git-core/git-tag neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-unpack-file /usr/nekoware/libexec/git-core/git-unpack-file neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-unpack-file /usr/nekoware/libexec/git-core/git-unpack-file neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-unpack-objects /usr/nekoware/libexec/git-core/git-unpack-objects neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-unpack-objects /usr/nekoware/libexec/git-core/git-unpack-objects neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-update-index /usr/nekoware/libexec/git-core/git-update-index neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-update-index /usr/nekoware/libexec/git-core/git-update-index neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-update-ref /usr/nekoware/libexec/git-core/git-update-ref neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-update-ref /usr/nekoware/libexec/git-core/git-update-ref neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-update-server-info /usr/nekoware/libexec/git-core/git-update-server-info neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-update-server-info /usr/nekoware/libexec/git-core/git-update-server-info neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-upload-archive /usr/nekoware/libexec/git-core/git-upload-archive neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-upload-archive /usr/nekoware/libexec/git-core/git-upload-archive neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-upload-pack /usr/nekoware/libexec/git-core/git-upload-pack neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-upload-pack /usr/nekoware/libexec/git-core/git-upload-pack neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-var /usr/nekoware/libexec/git-core/git-var neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-var /usr/nekoware/libexec/git-core/git-var neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-verify-commit /usr/nekoware/libexec/git-core/git-verify-commit neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-verify-commit /usr/nekoware/libexec/git-core/git-verify-commit neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-verify-pack /usr/nekoware/libexec/git-core/git-verify-pack neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-verify-pack /usr/nekoware/libexec/git-core/git-verify-pack neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-verify-tag /usr/nekoware/libexec/git-core/git-verify-tag neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-verify-tag /usr/nekoware/libexec/git-core/git-verify-tag neko_git.sw.eoe symval(../../bin/git)
+f 0755 root sys /usr/nekoware/libexec/git-core/git-web--browse /usr/nekoware/libexec/git-core/git-web--browse neko_git.sw.eoe
+f 0755 root sys /usr/nekoware/libexec/git-core/git-web--browse /usr/nekoware/libexec/git-core/git-web--browse neko_git.sw.eoe
+l 0755 root sys /usr/nekoware/libexec/git-core/git-whatchanged /usr/nekoware/libexec/git-core/git-whatchanged neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-whatchanged /usr/nekoware/libexec/git-core/git-whatchanged neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-worktree /usr/nekoware/libexec/git-core/git-worktree neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-worktree /usr/nekoware/libexec/git-core/git-worktree neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-write-tree /usr/nekoware/libexec/git-core/git-write-tree neko_git.sw.eoe symval(../../bin/git)
+l 0755 root sys /usr/nekoware/libexec/git-core/git-write-tree /usr/nekoware/libexec/git-core/git-write-tree neko_git.sw.eoe symval(../../bin/git)
+f 0644 root sys /usr/nekoware/libexec/git-core/mergetools/mergetools/araxis /usr/nekoware/libexec/git-core/mergetools/mergetools/araxis neko_git.sw.eoe
+f 0644 root sys /usr/nekoware/libexec/git-core/mergetools/mergetools/araxis /usr/nekoware/libexec/git-core/mergetools/mergetools/araxis neko_git.sw.eoe
+f 0644 root sys /usr/nekoware/libexec/git-core/mergetools/mergetools/bc /usr/nekoware/libexec/git-core/mergetools/mergetools/bc neko_git.sw.eoe
+f 0644 root sys /usr/nekoware/libexec/git-core/mergetools/mergetools/bc /usr/nekoware/libexec/git-core/mergetools/mergetools/bc neko_git.sw.eoe
+f 0644 root sys /usr/nekoware/libexec/git-core/mergetools/mergetools/codecompare /usr/nekoware/libexec/git-core/mergetools/mergetools/codecompare neko_git.sw.eoe
+f 0644 root sys /usr/nekoware/libexec/git-core/mergetools/mergetools/codecompare /usr/nekoware/libexec/git-core/mergetools/mergetools/codecompare neko_git.sw.eoe
+f 0644 root sys /usr/nekoware/libexec/git-core/mergetools/mergetools/deltawalker /usr/nekoware/libexec/git-core/mergetools/mergetools/deltawalker neko_git.sw.eoe
+f 0644 root sys /usr/nekoware/libexec/git-core/mergetools/mergetools/deltawalker /usr/nekoware/libexec/git-core/mergetools/mergetools/deltawalker neko_git.sw.eoe
+f 0644 root sys /usr/nekoware/libexec/git-core/mergetools/mergetools/diffmerge /usr/nekoware/libexec/git-core/mergetools/mergetools/diffmerge neko_git.sw.eoe
+f 0644 root sys /usr/nekoware/libexec/git-core/mergetools/mergetools/diffmerge /usr/nekoware/libexec/git-core/mergetools/mergetools/diffmerge neko_git.sw.eoe
+f 0644 root sys /usr/nekoware/libexec/git-core/mergetools/mergetools/diffuse /usr/nekoware/libexec/git-core/mergetools/mergetools/diffuse neko_git.sw.eoe
+f 0644 root sys /usr/nekoware/libexec/git-core/mergetools/mergetools/diffuse /usr/nekoware/libexec/git-core/mergetools/mergetools/diffuse neko_git.sw.eoe
+f 0644 root sys /usr/nekoware/libexec/git-core/mergetools/mergetools/ecmerge /usr/nekoware/libexec/git-core/mergetools/mergetools/ecmerge neko_git.sw.eoe
+f 0644 root sys /usr/nekoware/libexec/git-core/mergetools/mergetools/ecmerge /usr/nekoware/libexec/git-core/mergetools/mergetools/ecmerge neko_git.sw.eoe
+f 0644 root sys /usr/nekoware/libexec/git-core/mergetools/mergetools/emerge /usr/nekoware/libexec/git-core/mergetools/mergetools/emerge neko_git.sw.eoe
+f 0644 root sys /usr/nekoware/libexec/git-core/mergetools/mergetools/emerge /usr/nekoware/libexec/git-core/mergetools/mergetools/emerge neko_git.sw.eoe
+f 0644 root sys /usr/nekoware/libexec/git-core/mergetools/mergetools/examdiff /usr/nekoware/libexec/git-core/mergetools/mergetools/examdiff neko_git.sw.eoe
+f 0644 root sys /usr/nekoware/libexec/git-core/mergetools/mergetools/examdiff /usr/nekoware/libexec/git-core/mergetools/mergetools/examdiff neko_git.sw.eoe
+f 0644 root sys /usr/nekoware/libexec/git-core/mergetools/mergetools/guiffy /usr/nekoware/libexec/git-core/mergetools/mergetools/guiffy neko_git.sw.eoe
+f 0644 root sys /usr/nekoware/libexec/git-core/mergetools/mergetools/guiffy /usr/nekoware/libexec/git-core/mergetools/mergetools/guiffy neko_git.sw.eoe
+f 0644 root sys /usr/nekoware/libexec/git-core/mergetools/mergetools/gvimdiff /usr/nekoware/libexec/git-core/mergetools/mergetools/gvimdiff neko_git.sw.eoe
+f 0644 root sys /usr/nekoware/libexec/git-core/mergetools/mergetools/gvimdiff /usr/nekoware/libexec/git-core/mergetools/mergetools/gvimdiff neko_git.sw.eoe
+f 0644 root sys /usr/nekoware/libexec/git-core/mergetools/mergetools/kdiff3 /usr/nekoware/libexec/git-core/mergetools/mergetools/kdiff3 neko_git.sw.eoe
+f 0644 root sys /usr/nekoware/libexec/git-core/mergetools/mergetools/kdiff3 /usr/nekoware/libexec/git-core/mergetools/mergetools/kdiff3 neko_git.sw.eoe
+f 0644 root sys /usr/nekoware/libexec/git-core/mergetools/mergetools/kompare /usr/nekoware/libexec/git-core/mergetools/mergetools/kompare neko_git.sw.eoe
+f 0644 root sys /usr/nekoware/libexec/git-core/mergetools/mergetools/kompare /usr/nekoware/libexec/git-core/mergetools/mergetools/kompare neko_git.sw.eoe
+f 0644 root sys /usr/nekoware/libexec/git-core/mergetools/mergetools/meld /usr/nekoware/libexec/git-core/mergetools/mergetools/meld neko_git.sw.eoe
+f 0644 root sys /usr/nekoware/libexec/git-core/mergetools/mergetools/meld /usr/nekoware/libexec/git-core/mergetools/mergetools/meld neko_git.sw.eoe
+f 0644 root sys /usr/nekoware/libexec/git-core/mergetools/mergetools/nvimdiff /usr/nekoware/libexec/git-core/mergetools/mergetools/nvimdiff neko_git.sw.eoe
+f 0644 root sys /usr/nekoware/libexec/git-core/mergetools/mergetools/nvimdiff /usr/nekoware/libexec/git-core/mergetools/mergetools/nvimdiff neko_git.sw.eoe
+f 0644 root sys /usr/nekoware/libexec/git-core/mergetools/mergetools/opendiff /usr/nekoware/libexec/git-core/mergetools/mergetools/opendiff neko_git.sw.eoe
+f 0644 root sys /usr/nekoware/libexec/git-core/mergetools/mergetools/opendiff /usr/nekoware/libexec/git-core/mergetools/mergetools/opendiff neko_git.sw.eoe
+f 0644 root sys /usr/nekoware/libexec/git-core/mergetools/mergetools/p4merge /usr/nekoware/libexec/git-core/mergetools/mergetools/p4merge neko_git.sw.eoe
+f 0644 root sys /usr/nekoware/libexec/git-core/mergetools/mergetools/p4merge /usr/nekoware/libexec/git-core/mergetools/mergetools/p4merge neko_git.sw.eoe
+f 0644 root sys /usr/nekoware/libexec/git-core/mergetools/mergetools/smerge /usr/nekoware/libexec/git-core/mergetools/mergetools/smerge neko_git.sw.eoe
+f 0644 root sys /usr/nekoware/libexec/git-core/mergetools/mergetools/smerge /usr/nekoware/libexec/git-core/mergetools/mergetools/smerge neko_git.sw.eoe
+f 0644 root sys /usr/nekoware/libexec/git-core/mergetools/mergetools/tkdiff /usr/nekoware/libexec/git-core/mergetools/mergetools/tkdiff neko_git.sw.eoe
+f 0644 root sys /usr/nekoware/libexec/git-core/mergetools/mergetools/tkdiff /usr/nekoware/libexec/git-core/mergetools/mergetools/tkdiff neko_git.sw.eoe
+f 0644 root sys /usr/nekoware/libexec/git-core/mergetools/mergetools/tortoisemerge /usr/nekoware/libexec/git-core/mergetools/mergetools/tortoisemerge neko_git.sw.eoe
+f 0644 root sys /usr/nekoware/libexec/git-core/mergetools/mergetools/tortoisemerge /usr/nekoware/libexec/git-core/mergetools/mergetools/tortoisemerge neko_git.sw.eoe
+f 0644 root sys /usr/nekoware/libexec/git-core/mergetools/mergetools/vimdiff /usr/nekoware/libexec/git-core/mergetools/mergetools/vimdiff neko_git.sw.eoe
+f 0644 root sys /usr/nekoware/libexec/git-core/mergetools/mergetools/vimdiff /usr/nekoware/libexec/git-core/mergetools/mergetools/vimdiff neko_git.sw.eoe
+f 0644 root sys /usr/nekoware/libexec/git-core/mergetools/mergetools/winmerge /usr/nekoware/libexec/git-core/mergetools/mergetools/winmerge neko_git.sw.eoe
+f 0644 root sys /usr/nekoware/libexec/git-core/mergetools/mergetools/winmerge /usr/nekoware/libexec/git-core/mergetools/mergetools/winmerge neko_git.sw.eoe
+f 0644 root sys /usr/nekoware/libexec/git-core/mergetools/mergetools/xxdiff /usr/nekoware/libexec/git-core/mergetools/mergetools/xxdiff neko_git.sw.eoe
+f 0644 root sys /usr/nekoware/libexec/git-core/mergetools/mergetools/xxdiff /usr/nekoware/libexec/git-core/mergetools/mergetools/xxdiff neko_git.sw.eoe
+f 0644 root sys /usr/nekoware/patches/git-2.36.0.patch /usr/nekoware/patches/git-2.36.0.patch neko_git.opt.patches norqs
+f 0644 root sys /usr/nekoware/relnotes/git-2.36.0.relnotes /usr/nekoware/relnotes/git-2.36.0.relnotes neko_git.opt.relnotes norqs
+f 0644 root sys /usr/nekoware/share/git-core/templates/description /usr/nekoware/share/git-core/templates/description neko_git.sw.eoe norqs
+f 0755 root sys /usr/nekoware/share/git-core/templates/hooks/applypatch-msg.sample /usr/nekoware/share/git-core/templates/hooks/applypatch-msg.sample neko_git.sw.eoe norqs
+f 0755 root sys /usr/nekoware/share/git-core/templates/hooks/commit-msg.sample /usr/nekoware/share/git-core/templates/hooks/commit-msg.sample neko_git.sw.eoe norqs
+f 0755 root sys /usr/nekoware/share/git-core/templates/hooks/fsmonitor-watchman.sample /usr/nekoware/share/git-core/templates/hooks/fsmonitor-watchman.sample neko_git.sw.eoe norqs
+f 0755 root sys /usr/nekoware/share/git-core/templates/hooks/post-update.sample /usr/nekoware/share/git-core/templates/hooks/post-update.sample neko_git.sw.eoe norqs
+f 0755 root sys /usr/nekoware/share/git-core/templates/hooks/pre-applypatch.sample /usr/nekoware/share/git-core/templates/hooks/pre-applypatch.sample neko_git.sw.eoe norqs
+f 0755 root sys /usr/nekoware/share/git-core/templates/hooks/pre-commit.sample /usr/nekoware/share/git-core/templates/hooks/pre-commit.sample neko_git.sw.eoe norqs
+f 0755 root sys /usr/nekoware/share/git-core/templates/hooks/pre-merge-commit.sample /usr/nekoware/share/git-core/templates/hooks/pre-merge-commit.sample neko_git.sw.eoe norqs
+f 0755 root sys /usr/nekoware/share/git-core/templates/hooks/pre-push.sample /usr/nekoware/share/git-core/templates/hooks/pre-push.sample neko_git.sw.eoe norqs
+f 0755 root sys /usr/nekoware/share/git-core/templates/hooks/pre-rebase.sample /usr/nekoware/share/git-core/templates/hooks/pre-rebase.sample neko_git.sw.eoe norqs
+f 0755 root sys /usr/nekoware/share/git-core/templates/hooks/pre-receive.sample /usr/nekoware/share/git-core/templates/hooks/pre-receive.sample neko_git.sw.eoe norqs
+f 0755 root sys /usr/nekoware/share/git-core/templates/hooks/prepare-commit-msg.sample /usr/nekoware/share/git-core/templates/hooks/prepare-commit-msg.sample neko_git.sw.eoe norqs
+f 0755 root sys /usr/nekoware/share/git-core/templates/hooks/push-to-checkout.sample /usr/nekoware/share/git-core/templates/hooks/push-to-checkout.sample neko_git.sw.eoe norqs
+f 0755 root sys /usr/nekoware/share/git-core/templates/hooks/update.sample /usr/nekoware/share/git-core/templates/hooks/update.sample neko_git.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/git-core/templates/info/exclude /usr/nekoware/share/git-core/templates/info/exclude neko_git.sw.eoe norqs
+f 0755 root sys /usr/nekoware/share/gitweb/gitweb.cgi /usr/nekoware/share/gitweb/gitweb.cgi neko_git.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/gitweb/static/static/git-favicon.png /usr/nekoware/share/gitweb/static/static/git-favicon.png neko_git.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/gitweb/static/static/git-logo.png /usr/nekoware/share/gitweb/static/static/git-logo.png neko_git.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/gitweb/static/static/gitweb.css /usr/nekoware/share/gitweb/static/static/gitweb.css neko_git.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/gitweb/static/static/gitweb.js /usr/nekoware/share/gitweb/static/static/gitweb.js neko_git.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/locale/bg/LC_MESSAGES/git.mo /usr/nekoware/share/locale/bg/LC_MESSAGES/git.mo neko_git.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/locale/ca/LC_MESSAGES/git.mo /usr/nekoware/share/locale/ca/LC_MESSAGES/git.mo neko_git.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/locale/de/LC_MESSAGES/git.mo /usr/nekoware/share/locale/de/LC_MESSAGES/git.mo neko_git.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/locale/el/LC_MESSAGES/git.mo /usr/nekoware/share/locale/el/LC_MESSAGES/git.mo neko_git.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/locale/es/LC_MESSAGES/git.mo /usr/nekoware/share/locale/es/LC_MESSAGES/git.mo neko_git.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/locale/fr/LC_MESSAGES/git.mo /usr/nekoware/share/locale/fr/LC_MESSAGES/git.mo neko_git.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/locale/id/LC_MESSAGES/git.mo /usr/nekoware/share/locale/id/LC_MESSAGES/git.mo neko_git.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/locale/is/LC_MESSAGES/git.mo /usr/nekoware/share/locale/is/LC_MESSAGES/git.mo neko_git.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/locale/it/LC_MESSAGES/git.mo /usr/nekoware/share/locale/it/LC_MESSAGES/git.mo neko_git.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/locale/ko/LC_MESSAGES/git.mo /usr/nekoware/share/locale/ko/LC_MESSAGES/git.mo neko_git.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/locale/pl/LC_MESSAGES/git.mo /usr/nekoware/share/locale/pl/LC_MESSAGES/git.mo neko_git.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/locale/pt_PT/LC_MESSAGES/git.mo /usr/nekoware/share/locale/pt_PT/LC_MESSAGES/git.mo neko_git.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/locale/ru/LC_MESSAGES/git.mo /usr/nekoware/share/locale/ru/LC_MESSAGES/git.mo neko_git.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/locale/sv/LC_MESSAGES/git.mo /usr/nekoware/share/locale/sv/LC_MESSAGES/git.mo neko_git.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/locale/tr/LC_MESSAGES/git.mo /usr/nekoware/share/locale/tr/LC_MESSAGES/git.mo neko_git.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/locale/vi/LC_MESSAGES/git.mo /usr/nekoware/share/locale/vi/LC_MESSAGES/git.mo neko_git.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/locale/zh_CN/LC_MESSAGES/git.mo /usr/nekoware/share/locale/zh_CN/LC_MESSAGES/git.mo neko_git.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/locale/zh_TW/LC_MESSAGES/git.mo /usr/nekoware/share/locale/zh_TW/LC_MESSAGES/git.mo neko_git.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/perl5/FromCPAN/Error.pm /usr/nekoware/share/perl5/FromCPAN/Error.pm neko_git.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/perl5/FromCPAN/Mail/Address.pm /usr/nekoware/share/perl5/FromCPAN/Mail/Address.pm neko_git.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/perl5/Git.pm /usr/nekoware/share/perl5/Git.pm neko_git.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/perl5/Git/I18N.pm /usr/nekoware/share/perl5/Git/I18N.pm neko_git.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/perl5/Git/IndexInfo.pm /usr/nekoware/share/perl5/Git/IndexInfo.pm neko_git.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/perl5/Git/LoadCPAN.pm /usr/nekoware/share/perl5/Git/LoadCPAN.pm neko_git.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/perl5/Git/LoadCPAN/Error.pm /usr/nekoware/share/perl5/Git/LoadCPAN/Error.pm neko_git.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/perl5/Git/LoadCPAN/Mail/Address.pm /usr/nekoware/share/perl5/Git/LoadCPAN/Mail/Address.pm neko_git.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/perl5/Git/Packet.pm /usr/nekoware/share/perl5/Git/Packet.pm neko_git.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/perl5/Git/SVN.pm /usr/nekoware/share/perl5/Git/SVN.pm neko_git.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/perl5/Git/SVN/Editor.pm /usr/nekoware/share/perl5/Git/SVN/Editor.pm neko_git.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/perl5/Git/SVN/Fetcher.pm /usr/nekoware/share/perl5/Git/SVN/Fetcher.pm neko_git.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/perl5/Git/SVN/GlobSpec.pm /usr/nekoware/share/perl5/Git/SVN/GlobSpec.pm neko_git.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/perl5/Git/SVN/Log.pm /usr/nekoware/share/perl5/Git/SVN/Log.pm neko_git.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/perl5/Git/SVN/Memoize/YAML.pm /usr/nekoware/share/perl5/Git/SVN/Memoize/YAML.pm neko_git.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/perl5/Git/SVN/Migration.pm /usr/nekoware/share/perl5/Git/SVN/Migration.pm neko_git.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/perl5/Git/SVN/Prompt.pm /usr/nekoware/share/perl5/Git/SVN/Prompt.pm neko_git.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/perl5/Git/SVN/Ra.pm /usr/nekoware/share/perl5/Git/SVN/Ra.pm neko_git.sw.eoe norqs
+f 0644 root sys /usr/nekoware/share/perl5/Git/SVN/Utils.pm /usr/nekoware/share/perl5/Git/SVN/Utils.pm neko_git.sw.eoe norqs
+f 0644 root sys /usr/nekoware/src/git-2.36.0.tar.gz /usr/nekoware/src/git-2.36.0.tar.gz neko_git.opt.src norqs
