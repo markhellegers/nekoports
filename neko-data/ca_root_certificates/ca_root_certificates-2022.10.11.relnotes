@@ -1,0 +1,52 @@
+PACKAGE NAME
+------------
+neko_ca_root_certificates
+
+
+DESCRIPTION
+-----------
+Certificate data from Mozilla
+
+
+SOURCE/VERSION
+--------------
+ca_root_certificates-2022.10.11 / 1
+
+
+IRIX/MIPSPRO VERSION
+--------------------
+6.5.22 / none
+
+
+ENVIRONMENT VARIABLES
+---------------------
+None
+
+CONFIGURE
+---------
+None
+
+
+BUILD
+-----
+gmake
+gmake install
+
+
+KNOWN DEPENDENCIES
+------------------
+neko_openssl.sw.lib 33 maxint
+
+gmake to build the package
+
+
+ERRORS/MISCELLANEOUS
+--------------------
+None
+
+PACKAGED BY
+-----------
+
+S/N     VER          PORTER                                Date
+---------------------------------------------------------------
+1       2022.10.11   Mark Hellegers (mark@firedisk.net)

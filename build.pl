@@ -18,11 +18,18 @@ sub build_port {
 	my $nekoports_install_dir = "/var/tmp/nekoports/install/$port_path";
 	my $nekoports_dist_dir = "/var/tmp/nekoports/dist/$port_path";
 	my $nekoports_recipe_path = "$nekoports_dir/$port_path/$port_recipe";
+	my $nekoports_port_and_version = $port_recipe;
+	$nekoports_port_and_version =~ s/.recipe//;
+	my @nekoports_port_fields = split(/-/, $nekoports_port_and_version);
+	my $nekoports_port = @nekoports_port_fields[0];
+
 	my $source_uri;
+	my $source_filename;
 	my $system_result;
 	my %environment_variables;
 	my $configure_flags;
 	my $make_flags;
+	my $custom_makefile;
 
 	# Open the recipe file and read all the interesting data
 	open(RECIPE, $nekoports_recipe_path) or die "Unable to open recipe at $nekoports_recipe_path";
@@ -34,6 +41,12 @@ sub build_port {
 			$source_uri = @line_fields[1];
 			# Strip the quotes from the uri
 			$source_uri =~ s/\"//g;
+		}
+		elsif ($line =~ /^SOURCE_FILENAME/) {
+			my @line_fields = split(/=/, $line);
+			$source_filename = @line_fields[1];
+			# Strip the quotes from the filename
+			$source_filename =~ s/\"//g;
 		}
 		elsif ($line =~ /^ENVIRONMENT/) {
 			# Read the next lines until we reach the end quote character
@@ -64,6 +77,12 @@ sub build_port {
 			# Strip the quotes from the configure flags
 			$make_flags =~ s/\"//g;
 		}
+		elsif ($line =~ /^CUSTOM_MAKEFILE/) {
+			my @line_fields = split(/=/, $line);
+			$custom_makefile = @line_fields[1];
+			# Strip the quotes from the setting
+			$custom_makefile =~ s/\"//g;
+		}
 	}
 	close RECIPE;
 
@@ -83,21 +102,49 @@ sub build_port {
 	print "Downloading source\n";
 	# Assuming everything after the last / is the filename
 	my @source_uri_fields = split(/\//, $source_uri);
-	my $source_filename = @source_uri_fields[-1];
+	if ($source_filename eq "")
+	{
+		# No specific filename speficied. Using name of the url
+		$source_filename = @source_uri_fields[-1];
+	}
 	$system_result = system("curl $source_uri > $source_filename");
 	if ($system_result) {
 		die "Failed to download file from $source_uri";
 	}
 
-	print "Unpacking source\n";
-	$system_result = system("gunzip -dc $source_filename | tar xf -");
-	if ($system_result) {
-		die "Failed to unpack file $source_filename";
-	}
+	my $source_dir;
+	if ($source_filename =~ /tar.gz$/)
+	{
+		print "Unpacking source\n";
+		$system_result = system("gunzip -dc $source_filename | tar xf -");
+		if ($system_result) {
+			die "Failed to unpack file $source_filename";
+		}
 
-	my $source_dir = $source_filename;
-	$source_dir =~ s/\.tar\.gz//;
+		$source_dir = $source_filename;
+		$source_dir =~ s/\.tar\.gz//;
+	}
+	else {
+		print "Creating source directory\n";
+		mkpath("$nekoports_build_dir/$nekoports_port_and_version");
+		$source_dir = $nekoports_port_and_version;
+		copy($source_filename, $source_dir) or die "Failed to copy source $source_filename to $source_dir";
+	}
 	chdir $source_dir;
+
+	if ($custom_makefile eq "1")
+	{
+		print "Copying custom makefile\n";
+		copy("$nekoports_dir/$port_path/Makefile", "Makefile") or die "Failed to copy custom makefile $nekoports_dir/$port_path/Makefile to $source_dir";
+		my $makefile_dir = "$nekoports_dir/$port_path/Makefile_files";
+		if (-e $makefile_dir) {
+			print "Copying custom makefile directory\n";
+			$system_result = system("cp -R $makefile_dir $nekoports_build_dir/$nekoports_port_and_version");
+			if ($system_result) {
+				die "Failed to copy custom makefile directory $makefile_dir to $source_dir";
+			}
+		}
+	}
 
 	print "Initializing repository\n";
 	$system_result = system("git init -q");
@@ -129,10 +176,13 @@ sub build_port {
 		$ENV{$key} = $environment_variables{$key};
 	}
 
-	print "Configuring source\n";
-	$system_result = system("./configure --prefix=/usr/nekoware $configure_flags");
-	if ($system_result) {
-		die "Failed to configure";
+	if ($custom_makefile ne "1")
+	{
+		print "Configuring source\n";
+		$system_result = system("./configure --prefix=/usr/nekoware $configure_flags");
+		if ($system_result) {
+			die "Failed to configure";
+		}
 	}
 
 	print "Building source\n";
@@ -157,11 +207,6 @@ sub build_port {
 	mkpath("$nekoports_install_nekoware_dir/dist");
 
 	print "Copying files to distribution directory\n";
-	my $nekoports_port_and_version = $port_recipe;
-	$nekoports_port_and_version =~ s/.recipe//;
-	my @nekoports_port_fields = split(/-/, $nekoports_port_and_version);
-	my $nekoports_port = @nekoports_port_fields[0];
-
 	my $nekoports_source_file_path = "$nekoports_build_dir/$source_filename";
 	my $nekoports_relnotes_path = $nekoports_recipe_path;
 	$nekoports_relnotes_path =~ s/recipe/relnotes/g;
@@ -197,3 +242,5 @@ print "Building port of less\n";
 build_port("sys-apps/less", "less-608.recipe");
 print "Building port of git\n";
 build_port("dev-vcs/git", "git-2.36.0.recipe");
+print "Building port of ca_root_certificates\n";
+build_port("neko-data/ca_root_certificates", "ca_root_certificates-2022.10.11.recipe");

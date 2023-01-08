@@ -1,0 +1,12 @@
+SUMMARY="Bundle of CA root certificates"
+DESCRIPTION="Certificate data from Mozilla"
+HOMEPAGE="https://curl.se/docs/caextract.html"
+COPYRIGHT="2008-2022 Mozilla"
+LICENSE=MPL v1.1, GNU GLP v2,GNU LGPL v2.1"
+REVISION="1"
+SOURCE_URI="https://curl.se/ca/cacert-2022-10-11.pem"
+SOURCE_FILENAME="cacert.pem"
+CUSTOM_MAKEFILE="1"
+ENVIRONMENT="
+_XPG 1
+"
