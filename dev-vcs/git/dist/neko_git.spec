@@ -16,7 +16,7 @@ product neko_git
                 neko_openssl.sw.lib 33 maxint
                 neko_expat.sw.lib 5 maxint
                 neko_libunistring.sw.lib 1 maxint
-				neko_less.sw.eoe 1 maxint
+                neko_less.sw.eoe 1 maxint
             )
             exp neko_git.sw.eoe
         endsubsys
