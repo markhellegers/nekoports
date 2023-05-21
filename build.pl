@@ -25,11 +25,13 @@ sub build_port {
 
 	my $source_uri;
 	my $source_filename;
+	my $source_dir;
 	my $system_result;
 	my %environment_variables;
 	my $configure_flags;
 	my $make_flags;
 	my $custom_makefile;
+	my $skip_configure;
 
 	# Open the recipe file and read all the interesting data
 	open(RECIPE, $nekoports_recipe_path) or die "Unable to open recipe at $nekoports_recipe_path";
@@ -47,6 +49,12 @@ sub build_port {
 			$source_filename = @line_fields[1];
 			# Strip the quotes from the filename
 			$source_filename =~ s/\"//g;
+		}
+		elsif ($line =~ /^SOURCE_DIR/) {
+			my @line_fields = split(/=/, $line);
+			$source_dir = @line_fields[1];
+			# Strip the quotes from the filename
+			$source_dir =~ s/\"//g;
 		}
 		elsif ($line =~ /^ENVIRONMENT/) {
 			# Read the next lines until we reach the end quote character
@@ -83,6 +91,12 @@ sub build_port {
 			# Strip the quotes from the setting
 			$custom_makefile =~ s/\"//g;
 		}
+		elsif ($line =~ /^SKIP_CONFIGURE/) {
+			my @line_fields = split(/=/, $line);
+			$skip_configure = @line_fields[1];
+			# Strip the quotes from the setting
+			$skip_configure =~ s/\"//g;
+		}
 	}
 	close RECIPE;
 
@@ -107,12 +121,11 @@ sub build_port {
 		# No specific filename speficied. Using name of the url
 		$source_filename = @source_uri_fields[-1];
 	}
-	$system_result = system("curl $source_uri > $source_filename");
+	$system_result = system("curl -L $source_uri -o $source_filename");
 	if ($system_result) {
 		die "Failed to download file from $source_uri";
 	}
 
-	my $source_dir;
 	if ($source_filename =~ /tar.gz$/)
 	{
 		print "Unpacking source\n";
@@ -121,8 +134,11 @@ sub build_port {
 			die "Failed to unpack file $source_filename";
 		}
 
-		$source_dir = $source_filename;
-		$source_dir =~ s/\.tar\.gz//;
+		if ($source_dir eq "")
+		{
+			$source_dir = $source_filename;
+			$source_dir =~ s/\.tar\.gz//;
+		}
 	}
 	else {
 		print "Creating source directory\n";
@@ -176,7 +192,7 @@ sub build_port {
 		$ENV{$key} = $environment_variables{$key};
 	}
 
-	if ($custom_makefile ne "1")
+	if (($custom_makefile ne "1") and ($skip_configure ne "1"))
 	{
 		print "Configuring source\n";
 		$system_result = system("./configure --prefix=/usr/nekoware $configure_flags");
@@ -244,3 +260,5 @@ print "Building port of git\n";
 build_port("dev-vcs/git", "git-2.36.0.recipe");
 print "Building port of ca_root_certificates\n";
 build_port("neko-data/ca_root_certificates", "ca_root_certificates-2022.10.11.recipe");
+print "Building port of nedit\n";
+build_port("app-editors/nedit", "nedit-5.7.recipe");

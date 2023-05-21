@@ -1,0 +1,7 @@
+f 0755 root sys /usr/nekoware/bin/nc /usr/nekoware/bin/nc neko_nedit.sw.eoe
+f 0755 root sys /usr/nekoware/bin/nedit /usr/nekoware/bin/nedit neko_nedit.sw.eoe
+f 0644 root sys /usr/nekoware/dist/neko_nedit.idb /usr/nekoware/dist/neko_nedit.idb neko_nedit.opt.dist norqs
+f 0644 root sys /usr/nekoware/dist/neko_nedit.spec /usr/nekoware/dist/neko_nedit.spec neko_nedit.opt.dist norqs
+f 0444 root sys /usr/nekoware/patches/nedit-5.7.patch /usr/nekoware/patches/nedit-5.7.patch neko_nedit.opt.patches norqs
+f 0644 root sys /usr/nekoware/relnotes/nedit-5.7.relnotes /usr/nekoware/relnotes/nedit-5.7.relnotes neko_nedit.opt.relnotes norqs
+f 0644 root sys /usr/nekoware/src/nedit-5.7-src.tar.gz /usr/nekoware/src/nedit-5.7-src.tar.gz neko_nedit.opt.src norqs

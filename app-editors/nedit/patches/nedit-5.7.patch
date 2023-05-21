@@ -1,0 +1,176 @@
+From 55b2cf803d00f8fbb3abfaa11f0f90c8ca8413f5 Mon Sep 17 00:00:00 2001
+From: Mark Hellegers <mark@firedisk.net>
+Date: Mon, 10 Apr 2023 19:17:15 +0200
+Subject: [PATCH] Fixes to make it work on Irix
+
+---
+ Makefile               |  5 ++++
+ makefiles/Makefile.sgi |  4 ++--
+ source/highlight.c     | 12 +++-------
+ source/nedit.h         |  2 +-
+ source/preferences.c   | 54 ++++++++++++++++++++++++++++++++++++++++--
+ source/preferences.h   |  1 +
+ 6 files changed, 64 insertions(+), 14 deletions(-)
+
+diff --git a/Makefile b/Makefile
+index 40327bd..1afdee1 100644
+--- a/Makefile
++++ b/Makefile
+@@ -69,3 +69,8 @@ dist-bin: $(BINDIST-FILES)
+ 	-gzip -9 -c $(RELEASE).tar > $(RELEASE).tar.gz
+ 	-bzip2 -9 -c $(RELEASE).tar > $(RELEASE).tar.bz2
+ 	rm -rf $(RELEASE) $(RELEASE).tar
++
++install:
++	mkdir -p $(DESTDIR)/usr/nekoware/bin
++	cp source/nedit $(DESTDIR)/usr/nekoware/bin
++	cp source/nc $(DESTDIR)/usr/nekoware/bin
+diff --git a/makefiles/Makefile.sgi b/makefiles/Makefile.sgi
+index 3c5fc63..23aa4bf 100644
+--- a/makefiles/Makefile.sgi
++++ b/makefiles/Makefile.sgi
+@@ -17,10 +17,10 @@ AR=ar
+ # To test if the Motif library exports the runtime version
+ # add -DHAVE__XMVERSIONSTRING to CFLAGS
+ #
+-CFLAGS=-O -DSGI -DNO_XMIM -D__unix__
++CFLAGS=-c99 -O -DSGI -DSGI_CUSTOM -DEDITRES -DNO_XMIM -D__unix__
+ ARFLAGS=-urs
+ # For systems older than IRIX 6.0, add: BIGGER_STRINGS= -Wf,-XNl10000
+-LIBS= -lm -lXm -lXt -lX11 -lPW
++LIBS= -lm -lXm -lXt -lX11 -lPW -lXmu
+ 
+ include Makefile.common
+ 
+diff --git a/source/highlight.c b/source/highlight.c
+index 040ad6d..141a6b9 100644
+--- a/source/highlight.c
++++ b/source/highlight.c
+@@ -1982,24 +1982,18 @@ Pixel AllocColor(Widget w, const char *colorName, int *r, int *g, int *b)
+     Display     *display = XtDisplay(w);
+     Colormap     cMap;
+     Pixel        foreground, bestPixel;
++    Status       status;
+     double       small = 1.0e9;
+     int          depth;
+     unsigned int ncolors;
+     unsigned long i, best = 0;    /* pixel value */
+-    
+-    /* Get the correct colormap for compatability with the "best" visual
+-       feature in 5.2.  Default visual of screen is no good here. */
+ 
+-    XtVaGetValues(w,
+-                  XtNcolormap,   &cMap,
+-                  XtNdepth,      &depth,
+-                  XtNforeground, &foreground,
+-                  NULL);
++    status = GetColor(w, colorName, &colorDef, &depth, &foreground, &cMap);
+ 
+     bestPixel = foreground; /* Our last fallback */
+ 
+     /* First, check for valid syntax */        
+-    if (! XParseColor(display, cMap, colorName, &colorDef)) {
++    if (! status) {
+         fprintf(stderr, "NEdit: Color name %s not in database\n",  colorName);
+         colorDef.pixel = foreground;
+         if (XQueryColor(display, cMap, &colorDef)) {
+diff --git a/source/nedit.h b/source/nedit.h
+index 57b9791..e15fee7 100644
+--- a/source/nedit.h
++++ b/source/nedit.h
+@@ -71,7 +71,7 @@
+ #define AUTOSAVE_OP_LIMIT 8	/* number of distinct editing operations user
+ 				   can do before NEdit gens. new backup file */
+ #define MAX_FONT_LEN 100	/* maximum length for a font name */
+-#define MAX_COLOR_LEN 30	/* maximum length for a color name */
++#define MAX_COLOR_LEN 50	/* maximum length for a color name */
+ #define MAX_MARKS 36	    	/* max. # of bookmarks (one per letter & #) */
+ #define MIN_LINE_NUM_COLS 4 	/* Min. # of columns in line number display */
+ #define APP_NAME "nedit"	/* application name for loading resources */
+diff --git a/source/preferences.c b/source/preferences.c
+index 99e89f6..93babb8 100644
+--- a/source/preferences.c
++++ b/source/preferences.c
+@@ -6146,6 +6146,55 @@ static int verifyAllColors(colorDialog *cd)
+             checkColorStatus(cd, cd->cursorFgW) );
+ }
+ 
++Status GetColor(Widget w, const char *colorName, XColor *colorDef, int *depth, Pixel *foreground, Colormap *cMap)
++{
++    Status status;
++    Display *display = XtDisplay(w);
++
++#ifdef SGI
++    XtResource request_resources;
++    char * sgiColor;
++
++    if (strstr(colorName, "SGI_DYNAMIC ") != NULL) {
++        char * color = NEditStrdup(colorName);
++        int colorNameLen = strlen(color) - 12;
++        memmove(color, color + 12, colorNameLen);
++        color[colorNameLen] = '\0';
++        color[0] = tolower(color[0]);
++        request_resources.resource_name = color;
++        request_resources.resource_class = "XmBackground";
++        request_resources.resource_type = XmRString;
++        request_resources.resource_size = sizeof(char *);
++        request_resources.default_type = XmRImmediate;
++        request_resources.resource_offset = 0;
++        request_resources.default_addr = (XtPointer) NULL;
++
++        XtGetSubresources(w,
++                          (XtPointer) &sgiColor,
++                          NULL, NULL,
++                          &request_resources,
++                          1, NULL, 0);
++
++        if (sgiColor != NULL) {
++            colorName = sgiColor;
++        }
++        else {
++            printf("Invalid SGI color: %s\n", color);
++        }
++        NEditFree(color);
++    }
++#endif
++
++    XtVaGetValues(w,
++                  XtNcolormap,   cMap,
++                  XtNdepth,      depth,
++                  XtNforeground, foreground,
++                  NULL);
++
++    status = XParseColor(display, *cMap, colorName, colorDef);
++    return status;
++}
++
+ /* Returns True if the color is valid, False if it's not */
+ static Boolean checkColorStatus(colorDialog *cd, Widget colorFieldW)
+ {
+@@ -6153,9 +6202,10 @@ static Boolean checkColorStatus(colorDialog *cd, Widget colorFieldW)
+     XColor colorDef;
+     Status status;
+     Display *display = XtDisplay(cd->shell);
++    int depth;
++    Pixel foreground;
+     char *text = XmTextGetString(colorFieldW);
+-    XtVaGetValues(cd->shell, XtNcolormap, &cMap, NULL);
+-    status = XParseColor(display, cMap, text, &colorDef);
++    status = GetColor(cd->shell, text, &colorDef, &depth, &foreground, &cMap);
+     NEditFree(text);
+     return (status != 0);
+ }
+diff --git a/source/preferences.h b/source/preferences.h
+index a78d378..3904e78 100644
+--- a/source/preferences.h
++++ b/source/preferences.h
+@@ -210,5 +210,6 @@ Boolean GetPrefFocusOnRaise(void);
+ Boolean GetPrefHonorSymlinks(void);
+ Boolean GetPrefForceOSConversion(void);
+ void SetPrefFocusOnRaise(Boolean);
++Status GetColor(Widget w, const char *colorName, XColor *colorDef, int *depth, Pixel *foreground, Colormap *cMap);
+ 
+ #endif /* NEDIT_PREFERENCES_H_INCLUDED */
+-- 
+2.36.0
+

@@ -1,0 +1,49 @@
+PACKAGE NAME
+------------
+neko_nedit
+
+
+DESCRIPTION
+-----------
+NEdit (Nirvana Text Editor) is a Motif text editor
+
+SOURCE/VERSION
+--------------
+nedit-5.7 / 1
+
+
+IRIX/MIPSPRO VERSION
+--------------------
+6.5.22 / 7.4.4m
+
+
+ENVIRONMENT VARIABLES
+---------------------
+None
+
+CONFIGURE
+---------
+No configure
+
+
+BUILD
+-----
+gmake sgi
+gmake install
+
+
+KNOWN DEPENDENCIES
+------------------
+gmake to build the package
+
+
+ERRORS/MISCELLANEOUS
+--------------------
+None
+
+PACKAGED BY
+-----------
+
+S/N     VER      PORTER                                Date
+---------------------------------------------------------------
+3       5.7      Mark Hellegers (mark@firedisk.net)
